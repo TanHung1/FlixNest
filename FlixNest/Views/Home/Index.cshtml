@@ -1,0 +1,105 @@
+﻿@using FlixNest.Models;
+@using Microsoft.AspNetCore.Identity
+@using FlixNest.Areas.Identity.Data
+<section class="hero">
+    <div class="container">
+        <div class="hero__slider owl-carousel">
+            @foreach (var item in ViewBag.MovieFollow)
+                        {
+                <div class="hero__items set-bg" >
+                    <img src="~/images/@item.Image" class=".hero__items" />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero__text">
+                            <h2>@item.MovieName</h2>
+                                <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.MovieId"><span>Xem ngay</span> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- Product Section Begin -->
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="trending__product">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                            <div class="section-title">
+                                <h4>Mới nhất</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="btn__all">
+                                <a asp-action="GetallNewMovie" asp-controller="Home" class="primary-btn">Tất cả <span class="arrow_right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        @foreach (var item in ViewBag.movieEpTime)
+                        {
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+
+                                    <div class="product__item__pic set-bg">
+                                        <a asp-action="Detail" asp-controller="Home" asp-route-id="@item.MovieId">
+                                            <img src="~/images/@item.Image" alt="Trending Image" class="anh">
+                                        </a>
+                                        <div class="view"><i class="fa fa-eye"></i> @item.FollowerCount</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a asp-controller="Home" asp-action="Detail" asp-route-id="@item.MovieId">@item.MovieName</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="popular__product">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                            <div class="section-title">
+                                <h4>Theo dõi nhiều nhất</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="btn__all">
+                                <a asp-action="GetallMoviebyFollower" asp-controller="Home" class="primary-btn">Tất cả<span class="arrow_right"></span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="btn__all">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        @foreach (var item in ViewBag.Top6FollowedMovies)
+                        {
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg">
+                                        <a asp-action="Detail" asp-controller="Home" asp-route-id="@item.MovieId">
+                                            <img src="~/images/@item.Image" alt="Trending Image" class="anh">
+                                        </a>
+                                        <div class="view"><i class="fa fa-eye"></i> @item.FollowerCount</div>
+                                        <!-- Other details... -->
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a asp-controller="Home" asp-action="Detail" asp-route-id="@item.MovieId">@item.MovieName</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+               
+            </div>
+         
+        </div>
+    </div>
+</section>

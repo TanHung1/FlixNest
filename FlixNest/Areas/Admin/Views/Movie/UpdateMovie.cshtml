@@ -1,0 +1,50 @@
+﻿@model FlixNest.Models.Movie
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+<form asp-action="saveUpdateMovie" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="MovieId" />
+
+    <label asp-for="MovieName">Tên phim:</label>
+    <input asp-for="MovieName" class="form-control" />
+
+    <label asp-for="MovieTitle">Giới thiệu phim:</label>
+    <textarea asp-for="MovieTitle" class="form-control" ></textarea>
+
+    <label asp-for="YearId">Năm ra phim:</label>
+    <select asp-for="YearId" class="form-control" asp-items="ViewBag.Year">Lựa chọn năm phát hành</select>
+
+    <label asp-for="MovieTime">Thời lượng:</label>
+    <input asp-for="MovieTime" class="form-control" />
+
+    <label asp-for="CountryId">Quốc gia:</label>
+    <select asp-for="CountryId" class="form-control" asp-items="ViewBag.Country">Lựa chọn quốc gia</select>
+
+     <label asp-for="Image" class="control-label"></label>
+    <input asp-for="Image" type="file" name="imageFile" class="form-control" />
+
+
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="form-group">
+                <label class="control-label">Chọn loại phim</label>
+                <select class="js-select2" multiple="multiple" name="GenreList" asp-items="@ViewBag.GenreId"></select>
+            </div>
+
+            <div class="form-group">
+                <label>Chọn diễn viên</label>
+                <select class="js-select2" multiple="multiple" name="ActList" asp-items="@ViewBag.ActorId"></select>
+            </div>
+
+            <div class="form-group">
+                <label>Chọn đạo diễn</label>
+                <select class="js-select2" multiple="multiple" name="DirectorList" asp-items="@ViewBag.DirectorId"></select>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <button type="submit">Lưu cập nhật</button>
+</form>

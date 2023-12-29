@@ -1,0 +1,32 @@
+﻿@using FlixNest.Models;
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <th>Tên bộ phim</th>
+        <th>Tiêu đề</th>
+        <th>Hình ảnh</th>
+
+
+        <th>Hành động</th>
+    </thead>
+    <tbody>
+        @foreach(var  item in Model.Movie)
+        {
+            <tr>
+                <td>@item.MovieName</td>
+                <td>@item.MovieTitle</td>
+                <td><img src="~/images/@item.Image" style="width: 10%"/></td>
+
+                <td>
+                    <a asp-action="Detail" asp-controller="Episode" asp-route-id="@item.MovieId">Xem</a>
+                   
+                </td>
+               
+            </tr>
+            
+        }
+    
+    </tbody>
+</table>

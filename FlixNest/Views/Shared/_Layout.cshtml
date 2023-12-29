@@ -1,0 +1,158 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using FlixNest.Areas.Identity.Data;
+
+@using FlixNest.Repository.MovieRepository;
+@using FlixNest.Repository.YearRepository;
+@using FlixNest.Repository.GenreRepository;
+@using FlixNest.Repository.CountryRepository;
+@inject ICountryRepository countryRepository;
+@inject IGenreRepository genreRepository;
+@inject IMovieRepository movierepository;
+@inject IYearRepository yearRepository;
+@inject SignInManager<AccountUser> SignInManager;
+@inject UserManager<AccountUser> UserManager;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FlixNest</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+
+    <link rel="stylesheet" href="~/main/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="~/main/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/main/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="~/main/css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="~/main/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="~/main/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="~/main/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="~/main/css/style.css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a asp-action="Index" asp-controller="Home">Homepage</a></li>
+
+                                <li>
+                                    <a href="./categories.html">Thể loại <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        @foreach (var genre in genreRepository.GetAll())
+                                        {
+                                            <li><a asp-action="findMovieByGenre" asp-controller="Home" asp-route-genreId="@genre.GenreId">@genre.GenreName</a></li>
+                                        }
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./categories.html">Năm phát hành <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                       @foreach(var item in yearRepository.GetAll())
+                                        {
+                                            <li><a asp-action="findMovieByYear" asp-controller="Home"asp-route-id="@item.YearId">@item.YearName</a></li>
+                                        }                                      
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./categories.html">Quốc gia <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        @foreach (var item in countryRepository.GetAll())
+                                        {
+                                            <li><a asp-action="findMovieByCountry" asp-controller="Home" asp-route-id="@item.CountryId">@item.CountryName</a></li>
+                                        }
+                                    </ul>
+                                </li>
+                                @if(User.IsInRole("Administrator"))
+                                {
+                                    <li><a asp-action="Index" asp-area="admin" asp-controller="Home">Quản lý</a></li>
+                                }
+                                @if (SignInManager.IsSignedIn(User))
+                                {
+                                    <li>
+                                        <a href="./login.html"><span class="icon_profile"></span></a>
+                                        <ul class="dropdown">
+                                            <li><a href="/home/logout">Thông tin cá nhân</a></li>
+                                            <li><a asp-action="Following" asp-controller="Profile">Bộ phim đang theo dõi</a></li>
+                                            <li><a href="/home/logout">Đăng xuất</a></li>
+                                        </ul>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <a href="Identity/Account/Login"><span class="icon_profile" style="color: white"></span></a>
+                                }
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
+
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="page-up">
+            <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </footer>
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form" asp-action="findbyMovieName" asp-controller="Home" method="get">
+                <input type="text" id="search-input" name="name" placeholder="TÌm kiếm ở đây....." required >
+                <button type="submit" class="btn btn-danger" style="width:110px; height:50px">Tìm kiếm</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <!-- Js Plugins -->
+    <script src="~/main/js/jquery-3.3.1.min.js"></script>
+    <script src="~/main/js/bootstrap.min.js"></script>
+    <script src="~/main/js/player.js"></script>
+    <script src="~/main/js/jquery.nice-select.min.js"></script>
+    <script src="~/main/js/mixitup.min.js"></script>
+    <script src="~/main/js/jquery.slicknav.js"></script>
+    <script src="~/main/js/owl.carousel.min.js"></script>
+    <script src="~/main/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<h1>Chi tiết Video</h1>
+
+@if (ViewBag.Movie != null)
+{
+    <h1>@ViewBag.Movie.MovieName</h1>
+    <h1>@ViewBag.Movie.MovieTitle</h1>
+}
+
+<table class="table">
+    <thead>
+    <th>Tên tập phim</th>
+    <th>Ngày ra phim</th>
+    <th>Video</th>
+    <th>Hành động</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.EpisodeName</td>
+            <td>@Model.ReleaseDate</td>
+            <td>@Model.Video</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Danh sách tập phim:</h2>
+<table class="table">
+    <thead>
+    <th>Tên tập phim</th>
+    <th>Ngày ra phim</th>
+    <th>Video</th>
+    <th>Hành động</th>
+    </thead>
+    <tbody>
+        @foreach (var episode in ViewBag.Episodes)
+        {
+            <tr>
+                <td>@episode.EpisodeName</td>
+                <td>@episode.ReleaseDate</td>
+                <td>@episode.Video</td>
+                <td><a asp-action="DetailVideo" asp-controller="Episode" asp-route-id="@episode.EpisodeId">Xem phim</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

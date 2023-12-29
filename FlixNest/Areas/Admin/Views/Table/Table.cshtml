@@ -1,0 +1,92 @@
+﻿@using FlixNest.Models;
+@using FlixNest.Repository.MovieGenreRepository
+
+@inject IMovieGenreRepository _movieRepository;
+
+<div class="app-title">
+    <div>
+        <h1><i class="fa fa-th-list"></i> Data Table</h1>
+        <p>Table to display analytical data effectively</p>
+    </div>
+    <ul class="app-breadcrumb breadcrumb side">
+        <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+        <li class="breadcrumb-item">Tables</li>
+        <li class="breadcrumb-item active"><a asp-action="Index">Data Table</a></li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="tile">
+            <div class="tile-body">
+                <table class="table table-hover table-bordered" id="table5">
+                    <thead>
+                        <tr>
+                            <th>Năm phát hành</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Year)
+                        {
+                            <tr>
+                                <td>@item.YearName</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" asp-controller="Year" asp-action="UpdateYear" asp-route-id="@item.YearId"><i class="dw dw-edit2"></i> Edit</a>
+                                            <a class="dropdown-item" asp-controller="Year" asp-action="DeleteYear" asp-route-id="@item.YearId"
+                                            onclick="return confirm('Bạn có muốn xóa!')"><i class="dw dw-delete-3"></i> Delete</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="tile">
+            <div class="tile-body">
+                <table class="table table-hover table-bordered" id="table6">
+                    <thead>
+                        <tr>
+                            <th>Tên Quốc gia</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Country)
+                        {
+                            <tr>
+                                <td>@item.CountryName</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" asp-controller="Country" asp-action="UpdateCountry" asp-route-id="@item.CountryId"><i class="dw dw-edit2"></i> Edit</a>
+                                            <a class="dropdown-item" asp-controller="Country" asp-action="DeleteCountry" asp-route-id="@item.CountryId"
+                                            onclick="return confirm('Bạn có muốn xóa quốc gia này')"><i class="dw dw-delete-3"></i> Delete</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,48 @@
+﻿@using FlixNest.Models;
+
+<!-- Product Section Begin -->
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="trending__product">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                            <div class="section-title">
+                                <h4>Tìm kiếm theo tên</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg">
+
+
+                                        <a asp-action="Detail" asp-controller="Home" asp-route-id="@item.MovieId">
+                                            <img src="~/images/@item.Image" alt="Trending Image" class="anh">
+                                        </a>
+
+
+
+                                    </div>
+                                    <div class="product__item__text">
+
+                                        <h5><a asp-controller="Home" asp-action="Detail" asp-route-id="@item.MovieId">@item.MovieName</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+
+
+                    </div>
+                </div>
+            
+    </div>
+</section>

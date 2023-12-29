@@ -1,0 +1,81 @@
+﻿@model FlixNest.Models.Movie;
+<div class="app-title">
+    <div>
+        <h1><i class="fa fa-edit"></i> Form Components</h1>
+        <p>Bootstrap default form components</p>
+    </div>
+    <ul class="app-breadcrumb breadcrumb">
+        <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+        <li class="breadcrumb-item">Forms</li>
+        <li class="breadcrumb-item"><a href="#">Form Components</a></li>
+    </ul>
+</div>
+<h1>Thêm phim</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="saveMovie" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
+            <div class="form-group">
+                <label asp-for="MovieName" class="control-label">Tên phim</label>
+                <input asp-for="MovieName" class="form-control" />
+                <span asp-validation-for="MovieName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MovieTitle" class="control-label">Giới thiệu phim</label>
+                <textarea asp-for="MovieTitle" class="form-control" ></textarea>
+                <span asp-validation-for="MovieTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearId" class="control-label">Năm phát hành</label>
+                <select asp-for="YearId" class="form-control" asp-items="ViewBag.Year">Lựa chọn năn phát hành</select>
+                <span asp-validation-for="YearId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MovieTime" class="control-label">Thời lượng</label>
+                <input asp-for="MovieTime" class="form-control" />
+                <span asp-validation-for="MovieTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CountryId" class="control-label">Quốc gia</label>
+                <select asp-for="CountryId" class="form-control" asp-items="ViewBag.Country" >Lưa chọn quốc gia</select>
+                <span asp-validation-for="CountryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Image" class="control-label">Chọn hình ảnh </label>
+                <input type="file" name="imageFIle" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="form-group">
+                        <label class="control-label">Chọn loại phim</label>
+                        <select class="js-select2" multiple="multiple" name="GenreList" asp-items="@ViewBag.GenreId"></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chọn diễn viên</label>
+                        <select class="js-select2" multiple="multiple" name="ActList" asp-items="@ViewBag.ActorId"></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chọn đạo diễn</label>
+                        <select class="js-select2" multiple="multiple" name="DirectorList" asp-items="@ViewBag.DirectorId"></select>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index" asp-controller="Movie">Trở về</a>
+</div>

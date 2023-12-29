@@ -1,0 +1,519 @@
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\appsettings.Development.json
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\appsettings.json
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.staticwebassets.runtime.json
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.exe
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.deps.json
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.runtimeconfig.json
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.pdb
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Humanizer.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.csproj.AssemblyReference.cache
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.AssemblyInfoInputs.cache
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.AssemblyInfo.cs
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.csproj.CoreCompileInputs.cache
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.MvcApplicationPartsAssemblyInfo.cache
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.RazorAssemblyInfo.cache
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.RazorAssemblyInfo.cs
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets\msbuild.FlixNest.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets\msbuild.build.FlixNest.props
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FlixNest.props
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FlixNest.props
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets.build.json
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets.development.json
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\scopedcss\bundle\FlixNest.styles.css
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\scopedcss\projectbundle\FlixNest.bundle.scp.css
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.csproj.CopyComplete
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\refint\FlixNest.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.pdb
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.genruntimeconfig.cache
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\ref\FlixNest.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\MessagePack.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\MessagePack.Annotations.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Build.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Build.Framework.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.Features.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Common.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Configuration.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Frameworks.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.LibraryModel.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Packaging.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.ProjectModel.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Protocol.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Versioning.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.AttributedModel.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.Convention.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.Hosting.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.Runtime.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.TypedParts.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\af\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ar\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\az\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\bg\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\bn-BD\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\da\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\de\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\el\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\es\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fa\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fi-FI\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fr-BE\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\he\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\hr\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\hu\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\hy\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\id\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\is\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\it\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ko-KR\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ku\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\lv\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ms-MY\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\mt\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\nb\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\nb-NO\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\nl\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pt\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ro\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\sk\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\sl\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\sr\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\sr-Latn\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\sv\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\th-TH\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\uk\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\vi\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-CN\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Humanizer.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\scopedcss\Views\Shared\_adminLayout.cshtml.rz.scp.css
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Project trang web xem phim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.MvcApplicationPartsAssemblyInfo.cs
+D:\Project trang web xem phim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\appsettings.Development.json
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\appsettings.json
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.staticwebassets.runtime.json
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.exe
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.deps.json
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.runtimeconfig.json
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\FlixNest.pdb
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Humanizer.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\MessagePack.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\MessagePack.Annotations.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Build.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Build.Framework.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.Features.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Common.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Configuration.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Frameworks.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.LibraryModel.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Packaging.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.ProjectModel.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Protocol.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\NuGet.Versioning.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.AttributedModel.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.Convention.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.Hosting.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.Runtime.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Composition.TypedParts.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\af\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ar\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\az\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\bg\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\bn-BD\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\da\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\de\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\el\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\es\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fa\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fi-FI\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fr-BE\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\he\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\hr\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\hu\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\hy\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\id\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\is\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\it\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ko-KR\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ku\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\lv\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ms-MY\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\mt\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\nb\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\nb-NO\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\nl\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pt\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ro\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\sk\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\sl\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\sr\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\sr-Latn\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\sv\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\th-TH\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\uk\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\vi\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-CN\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Humanizer.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.csproj.AssemblyReference.cache
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.AssemblyInfoInputs.cache
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.AssemblyInfo.cs
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.csproj.CoreCompileInputs.cache
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.MvcApplicationPartsAssemblyInfo.cs
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.MvcApplicationPartsAssemblyInfo.cache
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.RazorAssemblyInfo.cache
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.RazorAssemblyInfo.cs
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets\msbuild.FlixNest.Microsoft.AspNetCore.StaticWebAssets.props
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets\msbuild.build.FlixNest.props
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FlixNest.props
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FlixNest.props
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets.pack.json
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets.build.json
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\staticwebassets.development.json
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\scopedcss\Views\Shared\_adminLayout.cshtml.rz.scp.css
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\scopedcss\bundle\FlixNest.styles.css
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\scopedcss\projectbundle\FlixNest.bundle.scp.css
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.csproj.CopyComplete
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\refint\FlixNest.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.pdb
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.genruntimeconfig.cache
+D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\ref\FlixNest.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\JetBrains.Annotations.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\X.PagedList.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll

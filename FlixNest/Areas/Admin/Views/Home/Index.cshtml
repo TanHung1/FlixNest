@@ -1,0 +1,70 @@
+﻿<div class="app-title">
+    <div>
+        <h1><i class="fa fa-dashboard"></i> Trang chủ</h1>
+
+    </div>
+    <ul class="app-breadcrumb breadcrumb">
+        <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Trang chủ</a></li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-6 col-lg-3">
+        <div class="widget-small primary coloured-icon">
+            <i class="icon fa fa-users fa-3x"></i>
+            <div class="info">
+                <h4>Users</h4>
+                <p><b>@ViewBag.CountAccount</b></p>
+            </div>
+        </div>
+    </div>
+   
+    <div class="col-md-6 col-lg-3">
+        <div class="widget-small warning coloured-icon">
+            <i class="icon fa fa-files-o fa-3x"></i>
+            <div class="info">
+                <h4>Movies</h4>
+                <p><b>@ViewBag.MovieCount</b></p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="tile">
+            <h3 class="tile-title">Bộ phim có lượt theo dõi nhiều nhất</h3>
+
+                @foreach (var item in ViewBag.MovieFollow)
+                {
+                    <div style="display:flex">
+                    <img src="~/images/@item.Image" style="width:42%" />
+                   <ul>
+                        <li> <h2>Tên phim: @item.MovieName</h2></li>
+                        <li><h2>Số lượt theo dõi: @item.FollowerCount</h2></li>
+                   </ul>
+                  
+
+                        
+
+                   </div>
+                }
+
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="tile">
+            <h3 class="tile-title">Bộ phim có lượt tương tác nhiều nhất</h3>
+            @foreach (var item in ViewBag.MovieMostComment)
+            {
+                <div style="display:flex">
+                    <img src="~/images/@item.Image" style="width:40%"/>
+                    <ul>
+                        <li> <h2>Tên phim: @item.MovieName</h2></li>
+
+                    </ul>
+                </div>
+            }
+        
+    </div>
+</div>
