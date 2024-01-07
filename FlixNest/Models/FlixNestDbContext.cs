@@ -96,5 +96,7 @@ namespace FlixNest.Models
 
 
         public DbSet<MovieActivity> MovieActivity { get; set; }
+
+        public DbSet<EpisodeActivity> EpisodeActivity { get; set; }
     }
 }

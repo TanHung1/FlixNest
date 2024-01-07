@@ -93,6 +93,9 @@ namespace FlixNest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
 
@@ -108,6 +111,33 @@ namespace FlixNest.Migrations
                     b.HasIndex("MovieId");
 
                     b.ToTable("episodes");
+                });
+
+            modelBuilder.Entity("FlixNest.Models.EpisodeActivity", b =>
+                {
+                    b.Property<Guid>("EPActivityId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Action")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EpisodeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("EPActivityId");
+
+                    b.HasIndex("EpisodeId");
+
+                    b.ToTable("EpisodeActivity");
                 });
 
             modelBuilder.Entity("FlixNest.Models.Genre", b =>
@@ -146,6 +176,9 @@ namespace FlixNest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("MovieName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -172,11 +205,13 @@ namespace FlixNest.Migrations
 
             modelBuilder.Entity("FlixNest.Models.MovieActivity", b =>
                 {
-                    b.Property<int>("ActivityId")
+                    b.Property<Guid>("ActivityId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ActivityId"), 1L, 1);
+                    b.Property<string>("Action")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateTime")
                         .HasColumnType("datetime2");
@@ -338,6 +373,17 @@ namespace FlixNest.Migrations
                     b.Navigation("Movie");
                 });
 
+            modelBuilder.Entity("FlixNest.Models.EpisodeActivity", b =>
+                {
+                    b.HasOne("FlixNest.Models.Episode", "Episode")
+                        .WithMany("EpisodeActivity")
+                        .HasForeignKey("EpisodeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Episode");
+                });
+
             modelBuilder.Entity("FlixNest.Models.Movie", b =>
                 {
                     b.HasOne("FlixNest.Models.Country", null)
@@ -355,11 +401,13 @@ namespace FlixNest.Migrations
 
             modelBuilder.Entity("FlixNest.Models.MovieActivity", b =>
                 {
-                    b.HasOne("FlixNest.Models.Movie", null)
+                    b.HasOne("FlixNest.Models.Movie", "Movie")
                         .WithMany("MovieActivities")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Movie");
                 });
 
             modelBuilder.Entity("FlixNest.Models.MovieActor", b =>
@@ -450,6 +498,11 @@ namespace FlixNest.Migrations
             modelBuilder.Entity("FlixNest.Models.Director", b =>
                 {
                     b.Navigation("movieDirectors");
+                });
+
+            modelBuilder.Entity("FlixNest.Models.Episode", b =>
+                {
+                    b.Navigation("EpisodeActivity");
                 });
 
             modelBuilder.Entity("FlixNest.Models.Genre", b =>

@@ -1,9 +1,9 @@
-﻿@model List<FlixNest.Models.Movie>
+﻿
 
 <h2>Danh sách các bộ phim đã theo dõi</h2>
 
 <div class="row">
-    @foreach (var item in Model)
+    @foreach (var item in ViewBag.movies)
     {
         <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="product__item">

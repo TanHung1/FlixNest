@@ -81,10 +81,12 @@
                                 @if (SignInManager.IsSignedIn(User))
                                 {
                                     <li>
-                                        <a href="./login.html"><span class="icon_profile"></span></a>
+                                        <a asp-action ="Index" asp-controller="Profile">
+                                            <span class="icon_profile"></span></a>
                                         <ul class="dropdown">
-                                            <li><a href="/home/logout">Thông tin cá nhân</a></li>
-                                            <li><a asp-action="Following" asp-controller="Profile">Bộ phim đang theo dõi</a></li>
+
+                                            <li><a asp-action="Index" asp-controller="Profile">Thông tin cá nhân</a></li>
+                                            <li><a asp-action="Following" asp-controller="Profile">Danh sách theo dõi</a></li>
                                             <li><a href="/home/logout">Đăng xuất</a></li>
                                         </ul>
                                     </li>

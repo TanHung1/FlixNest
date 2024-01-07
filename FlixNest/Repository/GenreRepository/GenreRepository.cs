@@ -1,4 +1,5 @@
 ﻿using FlixNest.Models;
+using Hangfire;
 
 namespace FlixNest.Repository.GenreRepository
 {
@@ -25,6 +26,8 @@ namespace FlixNest.Repository.GenreRepository
         {
             _context.Genre.Add(genre);
             _context.SaveChanges();
+            BackgroundJob.Enqueue(() => SuccessfulCreation(genre.GenreId,genre.GenreName, "Tạo thành công"));
+
             return true;
         }
 
@@ -33,6 +36,8 @@ namespace FlixNest.Repository.GenreRepository
             Genre genre = _context.Genre.FirstOrDefault(x => x.GenreId == id);
             _context.Genre.Remove(genre);
             _context.SaveChanges();
+            BackgroundJob.Enqueue(() => SuccessfulDeleted(genre.GenreId, genre.GenreName, "Xóa thành công"));
+
             return true;
         }
 
@@ -59,8 +64,22 @@ namespace FlixNest.Repository.GenreRepository
             {
                 ge.GenreName = genre.GenreName;
                 _context.SaveChanges();
+                BackgroundJob.Enqueue(() => SuccessfulUpdate(genre.GenreId, genre.GenreName, "Cập nhật thành công"));
+
             }
             return true;
+        }
+        public void SuccessfulCreation(int id,string name, string des)
+        {
+            Genre createGenre = _context.Genre.FirstOrDefault(x => x.GenreId == id);
+        }
+        public void SuccessfulUpdate(int genreId,string name , string des)
+        {
+            Genre updateGenre = findbyId(genreId);
+        }
+        public void SuccessfulDeleted(int genreId,string name, string des)
+        {
+            Genre DeleteGenre = findbyId(genreId);
         }
     }
 }

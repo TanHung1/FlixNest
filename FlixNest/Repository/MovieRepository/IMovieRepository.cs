@@ -7,11 +7,15 @@ namespace FlixNest.Repository.MovieRepository
         public List<Movie> Getallwith();
 
         public List<Movie> GetAll();
+        public List<Movie> getMovieDelete();
 
+        public bool RestoreMovie(Movie movie);
         public Movie findbyId(int id);
         public bool CreateMovie(Movie movie, Episode episodes);
         public bool UpdateMovie(Movie movie);
         public bool DeleteMovie(int id);
+
+        public bool DeleteCompleteMovie(int id);
         public List<Movie> findMoviebyName(string name);
         public Movie GetbyId(int id);
         public List<Movie> GetMoviebyYear(int id);

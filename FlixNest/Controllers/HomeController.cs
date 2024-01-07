@@ -49,7 +49,7 @@ namespace FlixNest.Controllers
         public IActionResult GetallNewMovie(int? Page)
         {
             int pageNumber = Page ?? 1;
-            int pageSize = 2;
+            int pageSize = 6;
             List<Episode> episodes = _episodeRepository.GetEpbyTime().ToList();
             List<Movie> allMovies = _movieRepository.GetAll();
             List<Movie> movieEpbyDate = episodes.GroupBy(x => x.MovieId)
@@ -63,16 +63,12 @@ namespace FlixNest.Controllers
         public IActionResult Index()
         {
             List<Movie> movies = _movieRepository.GetMoviebyFollower().Take(3).ToList();
-
-
-            List<Episode> episodes = _episodeRepository.GetEpbyTime().Take(7).ToList();
-            List<Movie> allMovies = _movieRepository.GetAll();
+            List<Episode> episodes = _episodeRepository.GetEpbyTime().Take(6).ToList();
             List<Movie> movieEpbyDate = episodes.GroupBy(x => x.MovieId)
-                                                .Select(group => group.OrderByDescending(x => x.ReleaseDate).FirstOrDefault()?.Movie)
+                                                .Select(group => group.OrderByDescending(x => x.ReleaseDate).First().Movie)
                                                 .Where(movie => movie != null)
                                                 .ToList();
             List<Movie> top6FollowedMovies = _movieRepository.GetMoviebyFollower().Take(6).ToList();
-            ViewBag.Movie = allMovies;
             ViewBag.MovieFollow = movies;
             ViewBag.movieEpTime = movieEpbyDate;
             ViewBag.Top6FollowedMovies = top6FollowedMovies;

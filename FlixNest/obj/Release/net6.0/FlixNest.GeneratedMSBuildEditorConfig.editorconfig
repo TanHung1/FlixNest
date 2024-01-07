@@ -1,0 +1,231 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FlixNest
+build_property.RootNamespace = FlixNest
+build_property.ProjectDir = D:\ProjectXemPhim\FlixNest\FlixNest\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ProjectXemPhim\FlixNest\FlixNest
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Account/CreateAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxDcmVhdGVBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Account/UpdateAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxVcGRhdGVBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Actor/CreateActor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWN0b3JcQ3JlYXRlQWN0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Actor/EditActor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWN0b3JcRWRpdEFjdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Country/CreateCountry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291bnRyeVxDcmVhdGVDb3VudHJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Country/UpdateCountry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291bnRyeVxVcGRhdGVDb3VudHJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Director/CreateDir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlyZWN0b3JcQ3JlYXRlRGlyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Director/EditDir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlyZWN0b3JcRWRpdERpci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Episode/CreateEp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxDcmVhdGVFcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Episode/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Episode/DetailVideo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxEZXRhaWxWaWRlby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Episode/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Episode/UpdateEp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxVcGRhdGVFcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Genre/CreateGenre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VucmVcQ3JlYXRlR2VucmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Genre/EditGenre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VucmVcRWRpdEdlbnJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/LogEpisode/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9nRXBpc29kZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/LogMovie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9nTW92aWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/CreateMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcQ3JlYXRlTW92aWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/UpdateMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcVXBkYXRlTW92aWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Table/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFibGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Table/ListAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFibGVcTGlzdEFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Table/MoviewithEp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFibGVcTW92aWV3aXRoRXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Table/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFibGVcVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Year/CreateYear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcWWVhclxDcmVhdGVZZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Year/UpdateYear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcWWVhclxVcGRhdGVZZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Home/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Home/findbyMovieName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmaW5kYnlNb3ZpZU5hbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Home/findMovieByCountry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmaW5kTW92aWVCeUNvdW50cnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Home/findMovieByGenre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmaW5kTW92aWVCeUdlbnJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Home/findMovieByYear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmaW5kTW92aWVCeVllYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Home/GetallMoviebyFollower.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRhbGxNb3ZpZWJ5Rm9sbG93ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Home/GetallNewMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRhbGxOZXdNb3ZpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Home/watching.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx3YXRjaGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Profile/Following.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxGb2xsb3dpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Shared/_adminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9hZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-wwhm55jxbp
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-sskm2jnvhb

@@ -247,6 +247,25 @@ namespace FlixNest.Areas.Admin.Controllers
             _movieRepository.DeleteMovie(id);
             return RedirectToAction("Index", "Table");
         }
+        public IActionResult MovieWaitingDelete()
+        {
+            List<Movie> movies = _movieRepository.getMovieDelete();
+            return View(movies);   
+        }
+        public IActionResult DeleteComple(int id)
+        {
+            _movieRepository.DeleteCompleteMovie(id);
+            return RedirectToAction("Index", "Table");
+        }
 
+        public IActionResult ReStoreMovie(int id)
+        {
+            Movie movie = _movieRepository.findbyId(id); 
+            if (movie != null)
+            {
+                _movieRepository.RestoreMovie(movie);
+            }
+            return RedirectToAction("Index", "Table");
+        }
     }
 }

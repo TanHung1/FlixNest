@@ -1,4 +1,6 @@
 ﻿using FlixNest.Models;
+using Hangfire;
+using System.Diagnostics.Metrics;
 
 namespace FlixNest.Repository.CountryRepository
 {
@@ -24,6 +26,8 @@ namespace FlixNest.Repository.CountryRepository
         {
             _context.Countries.Add(country);
             _context.SaveChanges();
+            BackgroundJob.Enqueue(() => SuccessfulCreation(country.CountryId, country.CountryName, "Tạo thành công"));
+
             return true;
         }
 
@@ -32,6 +36,7 @@ namespace FlixNest.Repository.CountryRepository
             Country countries = _context.Countries.FirstOrDefault(x => x.CountryId == id);
             _context.Countries.Remove(countries);
             _context.SaveChanges();
+            BackgroundJob.Enqueue(() => SuccessfulDeleted(countries.CountryId, "Xóa thành công"));
             return true;
         }
 
@@ -53,9 +58,24 @@ namespace FlixNest.Repository.CountryRepository
             {
                 countries.CountryName = country.CountryName;
                 _context.SaveChanges();
+                BackgroundJob.Enqueue(() => SuccessfulUpdate(country.CountryId, country.CountryName, "Cập nhật thành công"));
+
             }
             return true;
 
+        }
+
+        public void SuccessfulCreation(int id, string name, string des)
+        {
+            Country createCountry = _context.Countries.FirstOrDefault(x => x.CountryId == id);
+        }
+        public void SuccessfulUpdate(int countryId, string name, string des)
+        {
+            Country updateCountry = findbyId(countryId);
+        }
+        public void SuccessfulDeleted(int countryId, string des)
+        {
+            Country DeleteCountry = findbyId(countryId);
         }
     }
 }

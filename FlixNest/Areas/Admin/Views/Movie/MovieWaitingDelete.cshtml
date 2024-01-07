@@ -1,0 +1,76 @@
+﻿@using FlixNest.Models;
+@using FlixNest.Repository.MovieGenreRepository
+@using FlixNest.Repository.YearRepository
+@using FlixNest.Repository.CountryRepository
+@inject IMovieGenreRepository _movieRepository;
+
+@inject IYearRepository _yearRepository;
+@inject ICountryRepository _countryRepository;
+<div class="app-title">
+    <div>
+        <h1><i class="fa fa-th-list"></i> Data Table</h1>
+        <p>Table to display analytical data effectively</p>
+    </div>
+    <ul class="app-breadcrumb breadcrumb side">
+        <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+        <li class="breadcrumb-item">Tables</li>
+        <li class="breadcrumb-item active"><a asp-action="Index">Data Table</a></li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="tile">
+            <div class="tile-body">
+                <table class="table table-hover table-bordered" id="table1">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên phim</th>
+                            <th>Giới thiệu phim</th>
+                            <th>Năm ra phim</th>
+                            <th>Thời lượng</th>
+                            <th>Quốc gia</th>
+                            <th>Hình ảnh</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var number = 1;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@number</td>
+                                <td><a asp-action="Detail" asp-controller="Movie" asp-route-id="@item.MovieId">@item.MovieName</a></td>
+                                <td>@item.MovieTitle</td>
+                                <td>@(_yearRepository.findbyId(item.YearId)?.YearName)</td>
+                                <td>@item.MovieTime</td>
+                                <td>@(_countryRepository.findbyId(item.CountryId)?.CountryName)</td>
+
+                                <td><img src="~/images/@item.Image" style="width : 10%"></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" asp-controller="Movie" asp-action="ReStoreMovie" asp-route-id="@item.MovieId"
+                                               onclick="return confirm('Bạn có muốn khôi phục bộ phim này')"><i class="dw dw-delete-3"></i> Khôi phục</a>
+                                            <a class="dropdown-item" asp-controller="Movie" asp-action="DeleteComple" asp-route-id="@item.MovieId"
+                                               onclick="return confirm('Bạn có muốn xóa bộ phim này')"><i class="dw dw-delete-3"></i> Xóa vĩnh viễn</a> 
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

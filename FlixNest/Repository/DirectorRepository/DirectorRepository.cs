@@ -1,4 +1,6 @@
 ﻿using FlixNest.Models;
+using Hangfire;
+using Humanizer.Localisation;
 
 namespace FlixNest.Repository.DirectorRepository
 {
@@ -26,6 +28,8 @@ namespace FlixNest.Repository.DirectorRepository
         {
             _context.Director.Add(director);
             _context.SaveChanges();
+            BackgroundJob.Enqueue(() => SuccessfulCreation(director.DirId, director.Fname,director.LName, "Tạo thành công"));
+
             return true;
         }
 
@@ -34,6 +38,8 @@ namespace FlixNest.Repository.DirectorRepository
             Director director = _context.Director.FirstOrDefault(x => x.DirId == Id);
             _context.Director.Remove(director);
             _context.SaveChanges(true);
+            BackgroundJob.Enqueue(() => SuccessfulDeleted(director.DirId,  "Xóa thành công"));
+
             return true;
         }
 
@@ -60,10 +66,23 @@ namespace FlixNest.Repository.DirectorRepository
             {
                 dir.Fname = director.Fname;
                 dir.LName = director.LName;
-
                 _context.SaveChanges();
+                BackgroundJob.Enqueue(() => SuccessfulUpdate(director.DirId, director.Fname,director.LName, "Cập nhật thành công"));
+
             }
             return true;
+        }
+        public void SuccessfulCreation(int id, string name, string lname,string des)
+        {
+            Director createDirector = _context.Director.FirstOrDefault(x => x.DirId == id);
+        }
+        public void SuccessfulUpdate(int dirId, string name, string lname,string des)
+        {
+            Director updateDirector = findbyId(dirId);
+        }
+        public void SuccessfulDeleted(int dirId, string des)
+        {
+            Director DeleteDirector = findbyId(dirId);
         }
     }
 }

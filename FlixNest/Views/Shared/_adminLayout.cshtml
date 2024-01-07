@@ -52,7 +52,22 @@
        
         <ul class="app-menu">
             <li><a class="app-menu__item active" asp-action="Index" asp-controller="Home"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Trang chủ</span></a></li>
-           
+            <li class="treeview">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Quản lý hoạt động</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" asp-action="Index" asp-area="admin" asp-controller="LogMovie"><i class="icon fa fa-circle-o"></i> Nhật ký hoạt động của phim</a></li>
+                    <li><a class="treeview-item" asp-action="Index" asp-area="admin" asp-controller="LogEpisode"><i class="icon fa fa-circle-o"></i> Nhật ký hoạt động của tập phim</a></li>
+
+                </ul>
+            </li>
+            <li class="treeview">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Xóa hoặc khôi phục</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" asp-action="MovieWaitingDelete" asp-area="admin" asp-controller="Movie"><i class="icon fa fa-circle-o"></i> Quản lý phim</a></li>
+                    <li><a class="treeview-item" asp-action="EpisodeWaitingDelete" asp-area="admin" asp-controller="Episode"><i class="icon fa fa-circle-o"></i> Quản lý tập phim</a></li>
+
+                </ul>
+            </li>
             <li class="treeview">
                 <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
@@ -72,13 +87,14 @@
             <li class="treeview">
                 <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="treeview-item" asp-action="MoviewithEp" asp-area="admin" asp-controller="Table"><i class="icon fa fa-circle-o"></i> Bảng tất cả bộ phim</a></li>
-                    <li><a class="treeview-item" asp-action="Table" asp-area="admin" asp-controller="Table"><i class="icon fa fa-circle-o"></i> Bảng phụ</a></li>
-                    <li><a class="treeview-item" asp-action="Index" asp-area="admin" asp-controller="Table" ><i class="icon fa fa-circle-o"></i> Danh sách bảng</a></li>
-                    <li><a class="treeview-item" asp-action="ListAccount" asp-area="admin" asp-controller="Table"><i class="icon fa fa-circle-o"></i> Danh sách tài khoản</a></li>
+                    <li><a class="treeview-item" asp-action="MoviewithEp" asp-area="admin" asp-controller="Table"><i class="icon fa fa-circle-o"></i> Bảng gồm bộ phim và tập phim</a></li>
+                    <li><a class="treeview-item" asp-action="Table" asp-area="admin" asp-controller="Table"><i class="icon fa fa-circle-o"></i> Bảng quốc gia và năm phát hành</a></li>
+                    <li><a class="treeview-item" asp-action="Index" asp-area="admin" asp-controller="Table" ><i class="icon fa fa-circle-o"></i> Bảng bộ phim, thể loại.</a></li>
+                    <li><a class="treeview-item" asp-action="ListAccount" asp-area="admin" asp-controller="Table"><i class="icon fa fa-circle-o"></i> Bảng danh sách tài khoản</a></li>
 
                 </ul>
             </li>
+
            
         </ul>
     </aside>

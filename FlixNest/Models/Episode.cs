@@ -16,5 +16,10 @@ namespace FlixNest.Models
         public int MovieId { get; set; }
 
         public Movie Movie { get; set; }
+
+        public bool IsDeleted { get; set; }
+
+        public virtual ICollection<EpisodeActivity> EpisodeActivity { get; set; }
+
     }
 }

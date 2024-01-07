@@ -50,10 +50,10 @@ namespace FlixNest.Areas.Admin.Controllers
         }
 
 
-        public IActionResult DeleteEp(int id)
+        public IActionResult DeleteEp(int id, Episode episode)
         {
             _episodeRepository.DeleteEpisode(id);
-            return RedirectToAction("Index");
+            return RedirectToAction("MoviewithEp", "Table");
         }
         public IActionResult CreateEp()
         {
@@ -67,7 +67,7 @@ namespace FlixNest.Areas.Admin.Controllers
             return View("CreateEp", new Episode());
         }
         [HttpPost]
-        public IActionResult saveEp(Episode episode, IFormFile videoFile)
+        public IActionResult saveEp(Episode episode,Movie movie, IFormFile videoFile)
         {
             if (videoFile != null && videoFile.Length > 0)
             {
@@ -92,8 +92,8 @@ namespace FlixNest.Areas.Admin.Controllers
                     Value = x.MovieId.ToString(),
                 }).ToList();
             ViewBag.MovieId = movies;
-            _episodeRepository.CreateEpisode(episode);
-            return RedirectToAction("Index");
+            _episodeRepository.CreateEpisode(episode, movie);
+            return RedirectToAction("MoviewithEp", "Table");
         }
         public IActionResult UpdateEp(int id)
         {
@@ -107,7 +107,7 @@ namespace FlixNest.Areas.Admin.Controllers
             return View("UpdateEp", _episodeRepository.findById(id));
         }
         [HttpPost]
-        public IActionResult EditEp(Episode episode, IFormFile videoFile)
+        public IActionResult EditEp(Episode episode,Movie movie, IFormFile videoFile)
         {
             if (videoFile != null && videoFile.Length > 0)
             {
@@ -130,8 +130,28 @@ namespace FlixNest.Areas.Admin.Controllers
                 Value = x.MovieId.ToString(),
             }).ToList();
             ViewBag.MoviesId = movies;
-            _episodeRepository.UpdateEpisode(episode);
-            return RedirectToAction("Index");
+            _episodeRepository.UpdateEpisode(episode, movie);
+            return RedirectToAction("MoviewithEp", "Table");
+        }
+
+        public IActionResult EpisodeWaitingDelete()
+        {
+            List<Episode> episodes = _episodeRepository.getEpisodeDelete();
+            return View(episodes);
+        }
+        public IActionResult DeleteCompleteEpisode(int id)
+        {
+            _episodeRepository.DeleteCompleteEpisode(id);
+            return RedirectToAction("MoviewithEp", "Table");
+        }
+        public IActionResult RestoreEpisode(int id)
+        {
+            Episode episode = _episodeRepository.findById(id);
+            if(episode != null)
+            {
+                _episodeRepository.RestoreEpisode(episode);
+            }
+            return RedirectToAction("MoviewithEp", "Table");
         }
     }
 }

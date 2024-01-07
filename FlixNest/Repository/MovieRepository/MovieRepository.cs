@@ -1,4 +1,5 @@
 ﻿using FlixNest.Models;
+using Hangfire;
 using Microsoft.EntityFrameworkCore;
 
 namespace FlixNest.Repository.MovieRepository
@@ -7,9 +8,24 @@ namespace FlixNest.Repository.MovieRepository
     {
         private FlixNestDbContext _context;
 
+        public bool False { get; private set; }
+
         public MovieRepository(FlixNestDbContext context)
         {
             _context = context;
+
+        }
+        private void AddMovieLog(Movie movie, string action)
+        {
+            MovieActivity log = new MovieActivity
+            {
+                MovieId = movie.MovieId,
+                Action = action,
+                DateTime = DateTime.Now,
+                Description = $"{action} (MovieId: {movie.MovieId} Tên phim: {movie.MovieName})",
+            };
+            _context.MovieActivity.Add(log);
+            _context.SaveChanges();
 
         }
 
@@ -25,17 +41,31 @@ namespace FlixNest.Repository.MovieRepository
             episode.MovieId = movie.MovieId;
             _context.SaveChanges();
 
+            AddMovieLog(movie, "Đã được tạo");
+            BackgroundJob.Enqueue(() => SuccessfulCreation(movie.MovieId, "Tạo thành công"));
             return true;
         }
-
+        public bool DeleteCompleteMovie(int id)
+        {
+            Movie movie = _context.Movie.FirstOrDefault(x => x.MovieId == id);
+            AddMovieLog(movie, "Đã xóa vĩnh viễn");
+            _context.Movie.Remove(movie);
+            _context.SaveChanges();
+            return true;
+        }
         public bool DeleteMovie(int id)
         {
             Movie movie = _context.Movie.FirstOrDefault(x => x.MovieId == id);
-            /*
-             * 
-             */
-            _context.Movie.Remove(movie);
-            _context.SaveChanges(true);
+            if (movie != null)
+            {
+                movie.IsDeleted = true;
+
+                //_context.Movie.Remove(movie);
+                AddMovieLog(movie, "Đã xóa phim");
+                _context.SaveChanges(true);
+                BackgroundJob.Enqueue(() => SuccessfulDeleted(movie.MovieId, "Xóa thành công"));
+            }
+
             return true;
         }
 
@@ -47,7 +77,9 @@ namespace FlixNest.Repository.MovieRepository
 
         public List<Movie> Getallwith()
         {
-            return _context.Movie.Include(x => x.movieGenres)
+            return _context.Movie
+                                  .Where(x => !x.IsDeleted)
+                                  .Include(x => x.movieGenres)
                                   .Include(x => x.movieActors)
                                   .Include(x => x.movieDirectors)
                                   .ToList();
@@ -55,23 +87,37 @@ namespace FlixNest.Repository.MovieRepository
 
         public List<Movie> GetAll()
         {
-            return _context.Movie.ToList();
+            return _context.Movie.Where(x => !x.IsDeleted).ToList();
         }
+        public List<Movie> getMovieDelete()
+        {
+            return _context.Movie.Where(x => x.IsDeleted).ToList();
+        }
+        public bool RestoreMovie(Movie movie)
+        {
+            Movie mov = _context.Movie.FirstOrDefault(x => x.MovieId == movie.MovieId);
+            if (mov != null)
+            {
+                mov.MovieName = movie.MovieName;
+                mov.MovieTitle = movie.MovieTitle;
+                mov.MovieTime = movie.MovieTime;
+                mov.YearId = movie.YearId;
+                mov.CountryId = movie.CountryId;
+                mov.Image = movie.Image;
+                mov.IsDeleted = false;
 
+                _context.SaveChanges();
+
+                AddMovieLog(movie, "Đã khôi phục bộ phim");
+            }
+            return true;
+
+        }
         public bool UpdateMovie(Movie movie)
         {
             //string desc;
             Movie mov = _context.Movie.FirstOrDefault(x => x.MovieId == movie.MovieId);
 
-            //if (newDataMovie.MovieName != currentDataMovie.MovieName)
-            //{
-            //    desc += currentDataMovie.MovieName "->" newDataMovie.MovieName;
-            //}
-
-            //if (newDataMovie.MovieTitle != currentDataMovie.MovieTitle)
-            //{
-            //    desc += currentDataMovie.MovieName "->" newDataMovie.MovieName;
-            //}
             if (movie != null)
             {
                 mov.MovieName = movie.MovieName;
@@ -82,6 +128,9 @@ namespace FlixNest.Repository.MovieRepository
                 mov.Image = movie.Image;
 
                 _context.SaveChanges();
+
+                AddMovieLog(movie, "Đã cập nhật phim");
+                BackgroundJob.Enqueue(() => SuccessfulUpdate(movie.MovieId, "Cập nhật thành công"));
             }
             return true;
         }
@@ -140,6 +189,19 @@ namespace FlixNest.Repository.MovieRepository
         public List<Movie> GetMovieWithMostComment()
         {
             return _context.Movie.OrderByDescending(x => x.MovieComments.Count).ToList();
+        }
+
+        public void SuccessfulCreation(int id, string des)
+        {
+            Movie createMovie = _context.Movie.FirstOrDefault(x => x.MovieId == id);
+        }
+        public void SuccessfulUpdate(int MovieId, string des)
+        {
+            Movie updateMovie = findbyId(MovieId);
+        }
+        public void SuccessfulDeleted(int MovieId, string des)
+        {
+            Movie DeleteMovie = findbyId(MovieId);
         }
     }
 }

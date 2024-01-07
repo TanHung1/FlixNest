@@ -7,37 +7,26 @@
         <div class="col-lg-3">
             <div class="anime__details__pic set-bg" >
                 <img src="~/images/@ViewBag.Movie.Image" style="width 223px; height: 325px; object-fit: cover">
-                <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                <div class="view"><i class="fa fa-eye"></i> 9141</div>
+  
             </div>
         </div>
         <div class="col-lg-9">
             <div class="anime__details__text">
                 <div class="anime__details__title">
-                    <h3>@ViewBag.Movie.MovieName</h3>
-                    <span>フェイト／ステイナイト, Feito／sutei naito</span>
+                    <h3 style="color:red; font-size:54px">@ViewBag.Movie.MovieName</h3>
+               
                 </div>
-                <div class="anime__details__rating">
-                    <div class="rating">
-                        <a href="#"><i class="fa fa-star"></i></a>
-                        <a href="#"><i class="fa fa-star"></i></a>
-                        <a href="#"><i class="fa fa-star"></i></a>
-                        <a href="#"><i class="fa fa-star"></i></a>
-                        <a href="#"><i class="fa fa-star-half-o"></i></a>
-                    </div>
-                    <span>1.029 Votes</span>
-                </div>
+               
                 <p>
-                    @ViewBag.Movie.MovieTitle
+                    Giới thiệu: @ViewBag.Movie.MovieTitle
                 </p>
                 <div class="anime__details__widget">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <ul>
-                                <li><span>Type:</span> TV Series</li>
+
                                 <li><span>Quốc gia:</span> @(_countryRepository.findbyId(ViewBag.Movie.CountryId)?.CountryName)</li>
                                 <li><span>Năm phát hành: </span>@(_yearRepository.findbyId(ViewBag.Movie.YearId)?.YearName)</li>
-                                <li><span>Status:</span> Airing</li>
                                 <li><span>Thể loại:</span>
                                     @foreach (var genre in ViewBag.Genre)
                                     {
@@ -48,11 +37,8 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <ul>
-                                <li><span>Scores:</span> 7.31 / 1,515</li>
-                                <li><span>Rating:</span> 8.5 / 161 times</li>
-                                <li><span>Duration:</span> 24 min/ep</li>
-                                <li><span>Quality:</span> HD</li>
-                                <li><span>Views:</span> 131,541</li>
+                                <li><span>Thời lượng:</span> @ViewBag.Movie.MovieTime</li>
+                                <li><span>Số lượng theo dõi:</span> @ViewBag.Movie.FollowerCount</li>
                             </ul>
                         </div>
                     </div>
@@ -65,7 +51,7 @@
     </div>
 
 </div>
-<div class="row">
+<div class="row" style="margin-top:100px">
     <div class="col-md-12">
         <div class="tile">
             <div class="tile-body">
@@ -84,8 +70,8 @@
                                 <td>@episodes.EpisodeName</td>
                                 <td>@episodes.ReleaseDate</td>
                                 <td>
-                                    <a asp-action="UpdateEp" asp-controller="Episode" asp-route-id="@episodes.EpisodeId">Cap nhat</a>
-                                    <a asp-action="DeleteEp" asp-controller="Episode" asp-route-id="@episodes.EpisodeId">Cap nhat</a>
+                                    <a asp-action="UpdateEp" asp-controller="Episode" asp-route-id="@episodes.EpisodeId">Cập nhật </a>|
+                                    <a asp-action="DeleteEp" asp-controller="Episode" asp-route-id="@episodes.EpisodeId">Xóa</a>
                                 </td>
                             </tr>
 

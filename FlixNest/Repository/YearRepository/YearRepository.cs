@@ -1,4 +1,5 @@
 ﻿using FlixNest.Models;
+using Hangfire;
 
 namespace FlixNest.Repository.YearRepository
 {
@@ -13,6 +14,7 @@ namespace FlixNest.Repository.YearRepository
         {
             _context.Years.Add(year);
             _context.SaveChanges();
+            BackgroundJob.Enqueue(() => SuccessfulCreation(year.YearId, "Tạo thành công"));
             return true;
         }
 
@@ -21,6 +23,7 @@ namespace FlixNest.Repository.YearRepository
             Year year = _context.Years.FirstOrDefault(x => x.YearId == id);
             _context.Years.Remove(year);
             _context.SaveChanges();
+            BackgroundJob.Enqueue(() => SuccessfulDeleted(year.YearId, "Xóa thành công"));
             return true;
         }
 
@@ -42,6 +45,7 @@ namespace FlixNest.Repository.YearRepository
             {
                 years.YearName = year.YearName;
                 _context.SaveChanges();
+                BackgroundJob.Enqueue(() => SuccessfulUpdate(year.YearId, "Cập nhật thành công"));
             }
             return true;
         }
@@ -54,6 +58,19 @@ namespace FlixNest.Repository.YearRepository
                 return true;
             }
             return false;
+        }
+
+        public void SuccessfulCreation(int id, string des)
+        {
+            Year createYear = _context.Years.FirstOrDefault(x => x.YearId == id);
+        }
+        public void SuccessfulUpdate(int id, string des)
+        {
+            Year updateYear = findbyId(id);
+        }
+        public void SuccessfulDeleted(int id, string des)
+        {
+            Year deleteyear = findbyId(id);
         }
     }
 }

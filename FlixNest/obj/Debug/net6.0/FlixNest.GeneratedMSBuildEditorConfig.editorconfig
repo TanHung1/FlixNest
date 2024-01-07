@@ -10,6 +10,8 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FlixNest
 build_property.RootNamespace = FlixNest
 build_property.ProjectDir = D:\ProjectXemPhim\FlixNest\FlixNest\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -60,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxEZXRhaWxWaWRlby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Episode/EpisodeWaitingDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxFcGlzb2RlV2FpdGluZ0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Episode/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXBpc29kZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,12 +86,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/LogEpisode/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9nRXBpc29kZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/LogMovie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9nTW92aWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/CreateMovie.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcQ3JlYXRlTW92aWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/MovieWaitingDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcTW92aWVXYWl0aW5nRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/UpdateMovie.cshtml]
@@ -190,6 +208,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ProjectXemPhim/FlixNest/FlixNest/Views/Profile/Following.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxGb2xsb3dpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProjectXemPhim/FlixNest/FlixNest/Views/Shared/Error.cshtml]

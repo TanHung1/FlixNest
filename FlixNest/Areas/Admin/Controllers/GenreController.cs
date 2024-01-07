@@ -16,13 +16,17 @@ namespace FlixNest.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult saveGenre(Genre genre)
         {
-            if (ModelState.IsValid)
+            bool isGenreExist = _genreRepository.CheckNameGenre(genre.GenreName);
+            if(isGenreExist)
             {
+                ModelState.AddModelError(string.Empty, "Thể loại này đã có!");
+                return View("CreateGenre");
+            }
                 _genreRepository.CreateGenre(genre);
                 return RedirectToAction("Index", "Table");
-            }
+            
 
-            return View("CreateGenre");
+
         }
 
         public IActionResult CreateGenre()

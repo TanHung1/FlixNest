@@ -1,5 +1,6 @@
 ﻿using FlixNest.Areas.Identity.Data;
 using FlixNest.Models;
+using FlixNest.Repository.AccountRepository;
 using FlixNest.Repository.FollowRepository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,18 +13,30 @@ namespace FlixNest.Controllers
         private UserManager<AccountUser> _userManager;
         private IFollowRepository _followRepository;
         private FlixNestDbContext _context;
+        private IAccountRepository _accountRepository;
         public ProfileController(SignInManager<AccountUser> signManager, UserManager<AccountUser> userManager,
-            IFollowRepository followRepository, FlixNestDbContext context)
+            IFollowRepository followRepository, FlixNestDbContext context, IAccountRepository accountRepository)
         {
             _signManager = signManager;
             _userManager = userManager;
             _followRepository = followRepository;
             _context = context;
+            _accountRepository = accountRepository;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
+        public IActionResult UpdateProfile(AccountUser user)
+        {
+            _accountRepository.UpdateAccount(user);
+            return RedirectToAction("Index");
         }
         public IActionResult Following()
         {
@@ -33,7 +46,8 @@ namespace FlixNest.Controllers
             var movieFollowed = _context.MovieFollows.Where(x => x.UserId == userId).Select(x => x.MovieId).ToList();
             //Lấy danh thông tin movie từ movieId
             var Movie = _context.Movie.Where(x => movieFollowed.Contains(x.MovieId)).ToList();
-            return View(Movie);
+            ViewBag.movies = Movie;
+            return View();
         }
     }
 }

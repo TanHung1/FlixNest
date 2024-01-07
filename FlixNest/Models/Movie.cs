@@ -20,6 +20,8 @@ namespace FlixNest.Models
         public string Image { get; set; }
 
         public int FollowerCount { get; set; }
+
+        public bool IsDeleted { get; set; }
         public List<MovieGenre> movieGenres { get; set; }
 
         public List<MovieDirector> movieDirectors { get; set; }

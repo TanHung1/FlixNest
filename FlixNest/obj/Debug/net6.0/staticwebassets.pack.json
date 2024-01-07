@@ -829,24 +829,12 @@
       "PackagePath": "staticwebassets\\main\\videos\\anime-watch.jpg"
     },
     {
-      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\.DS_Store",
-      "PackagePath": "staticwebassets\\multiple\\css\\.DS_Store"
-    },
-    {
       "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\multiple\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\.DS_Store",
-      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\.DS_Store"
-    },
-    {
       "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\_media.css",
       "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\_media.css"
-    },
-    {
-      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\mixins\\.DS_Store",
-      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\mixins\\.DS_Store"
     },
     {
       "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\mixins\\_border-radius.css",
@@ -875,10 +863,6 @@
     {
       "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\style.css",
       "PackagePath": "staticwebassets\\multiple\\css\\style.css"
-    },
-    {
-      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\js\\.DS_Store",
-      "PackagePath": "staticwebassets\\multiple\\js\\.DS_Store"
     },
     {
       "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\js\\bootstrap.min.js",

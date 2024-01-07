@@ -1,4 +1,5 @@
 ﻿using FlixNest.Models;
+using Hangfire;
 
 namespace FlixNest.Repository.ActorRepository
 {
@@ -25,6 +26,8 @@ namespace FlixNest.Repository.ActorRepository
         {
             _context.Actor.Add(actor);
             _context.SaveChanges();
+            BackgroundJob.Enqueue(() => SuccessfulCreation(actor.ActId, actor.Fname, actor.Lname, "Tạo thành công"));
+
             return true;
         }
 
@@ -33,6 +36,8 @@ namespace FlixNest.Repository.ActorRepository
             Actor act = _context.Actor.FirstOrDefault(x => x.ActId == ActId);
             _context.Actor.Remove(act);
             _context.SaveChanges();
+            BackgroundJob.Enqueue(() => SuccessfulDeleted(act.ActId, act.Fname, act.Lname, "Xóa thành công"));
+
             return true;
         }
 
@@ -61,9 +66,22 @@ namespace FlixNest.Repository.ActorRepository
                 act.Lname = actor.Lname;
 
                 _context.SaveChanges(true);
+                BackgroundJob.Enqueue(() => SuccessfulUpdate(actor.ActId, actor.Fname, actor.Lname, "Cập nhật thành công"));
 
             }
             return true;
+        }
+        public void SuccessfulCreation(int id, string name, string lname, string des)
+        {
+            Actor createActor = _context.Actor.FirstOrDefault(x => x.ActId == id);
+        }
+        public void SuccessfulUpdate(int actorId, string fname, string lname, string des)
+        {
+            Actor updateActor = findActor(actorId);
+        }
+        public void SuccessfulDeleted(int actorId, string fname, string lname, string des)
+        {
+            Actor DeleteActor = findActor(actorId);
         }
     }
 }
