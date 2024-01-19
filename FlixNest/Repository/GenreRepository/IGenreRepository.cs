@@ -10,9 +10,11 @@ namespace FlixNest.Repository.GenreRepository
 
         public Genre findbyId(int id);
 
-        public bool CreateGenre(Genre genre);
-        public bool UpdateGenre(Genre genre);
-        public bool DeleteGenre(int id);
+        public bool CheckGenreUsed(int id);
+
+        public void CreateGenre(Genre genre);
+        public void UpdateGenre(Genre genre);
+        public void DeleteGenre(int id);
         public bool CheckNameGenre(string name);
     }
 }

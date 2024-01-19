@@ -92,19 +92,19 @@ namespace FlixNest.Migrations.FlixNest
                     b.HasData(
                         new
                         {
-                            Id = "f0ef801c-dea6-4f4a-b1e2-7c8a9d7092f2",
+                            Id = "3dba9aa5-3925-4723-a221-b3bde8d9fcbd",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0271db7c-9e3e-4ee7-84a6-9f9c909d681a",
+                            ConcurrencyStamp = "306a2940-fd1b-40bb-b2d0-619f2db65643",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             FullName = "admin",
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFY/SK1ySmyIQb5EooVNuN4elNE6j8jshEb/LrpLopuW5EVXoKuOZd9bZnOhh3P1kg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEB5N/qCjKUCJLenAiptxv91vLO9LtiKkzd4ztxy2L46JzExPZRP2wGADTADPywcbKg==",
                             PhoneNumber = "1234567890",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6affeeb4-4b5f-4707-9b95-2cac5d259d4e",
+                            SecurityStamp = "51b0f03c-9569-4b05-b30f-22b4fa9bf4f8",
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com"
                         });
@@ -139,8 +139,8 @@ namespace FlixNest.Migrations.FlixNest
                     b.HasData(
                         new
                         {
-                            Id = "156f6cd1-bbe3-4d3f-8776-d62cc3426fc2",
-                            ConcurrencyStamp = "ca0304d0-4afa-4d38-a392-c36716a4904c",
+                            Id = "e9d34a92-589f-46c6-97ee-17584f8384d2",
+                            ConcurrencyStamp = "3c923888-ae7e-4b7e-b3e8-d4e0dffe5d07",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -237,8 +237,8 @@ namespace FlixNest.Migrations.FlixNest
                     b.HasData(
                         new
                         {
-                            UserId = "f0ef801c-dea6-4f4a-b1e2-7c8a9d7092f2",
-                            RoleId = "156f6cd1-bbe3-4d3f-8776-d62cc3426fc2"
+                            UserId = "3dba9aa5-3925-4723-a221-b3bde8d9fcbd",
+                            RoleId = "e9d34a92-589f-46c6-97ee-17584f8384d2"
                         });
                 });
 

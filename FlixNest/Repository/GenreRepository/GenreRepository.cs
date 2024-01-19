@@ -1,4 +1,5 @@
 ﻿using FlixNest.Models;
+using FlixNest.Repository.MovieRepository;
 using Hangfire;
 
 namespace FlixNest.Repository.GenreRepository
@@ -6,10 +7,11 @@ namespace FlixNest.Repository.GenreRepository
     public class GenreRepository : IGenreRepository
     {
         private FlixNestDbContext _context;
-
+        
         public GenreRepository(FlixNestDbContext context)
         {
             _context = context;
+            
         }
 
         public bool CheckNameGenre(string name)
@@ -22,25 +24,31 @@ namespace FlixNest.Repository.GenreRepository
             return true;
         }
 
-        public bool CreateGenre(Genre genre)
+        public void CreateGenre(Genre genre)
         {
             _context.Genre.Add(genre);
             _context.SaveChanges();
             BackgroundJob.Enqueue(() => SuccessfulCreation(genre.GenreId,genre.GenreName, "Tạo thành công"));
 
-            return true;
+         
         }
 
-        public bool DeleteGenre(int id)
+        public void DeleteGenre(int id)
         {
             Genre genre = _context.Genre.FirstOrDefault(x => x.GenreId == id);
+            bool isGenreUsed = _context.MovieGenre.Any(x => x.GenreId == id);
+
             _context.Genre.Remove(genre);
             _context.SaveChanges();
             BackgroundJob.Enqueue(() => SuccessfulDeleted(genre.GenreId, genre.GenreName, "Xóa thành công"));
 
-            return true;
+           
         }
-
+        public bool CheckGenreUsed(int id)
+        {
+            bool isGenreUsed = _context.MovieGenre.Any(x => x.GenreId == id);
+            return isGenreUsed;
+        }
         public Genre findbyId(int id)
         {
             Genre genre = _context.Genre.FirstOrDefault(x => x.GenreId == id);
@@ -57,7 +65,7 @@ namespace FlixNest.Repository.GenreRepository
             return _context.Genre.ToDictionary(g => g.GenreId, g => g.GenreName);
         }
 
-        public bool UpdateGenre(Genre genre)
+        public void UpdateGenre(Genre genre)
         {
             Genre ge = _context.Genre.FirstOrDefault(x => x.GenreId == genre.GenreId);
             if (ge != null)
@@ -67,7 +75,7 @@ namespace FlixNest.Repository.GenreRepository
                 BackgroundJob.Enqueue(() => SuccessfulUpdate(genre.GenreId, genre.GenreName, "Cập nhật thành công"));
 
             }
-            return true;
+          
         }
         public void SuccessfulCreation(int id,string name, string des)
         {

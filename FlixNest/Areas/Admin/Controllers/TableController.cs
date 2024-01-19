@@ -1,4 +1,6 @@
-﻿using FlixNest.Models;
+﻿using FlixNest.Areas.Identity.Data;
+using FlixNest.Data;
+using FlixNest.Models;
 using FlixNest.Repository.AccountRepository;
 using FlixNest.Repository.ActorRepository;
 using FlixNest.Repository.CountryRepository;
@@ -10,13 +12,17 @@ using FlixNest.Repository.MovieDirectorRepository;
 using FlixNest.Repository.MovieGenreRepository;
 using FlixNest.Repository.MovieRepository;
 using FlixNest.Repository.YearRepository;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 namespace FlixNest.Areas.Admin.Controllers
 {
     [Area("admin")]
     public class TableController : Controller
     {
         private FlixNestDbContext _context;
+        private readonly FlixNestContext _flixNestContext;
         private IMovieRepository _movieRepository;
         private IGenreRepository _genreRepository;
         private IActorRepository _actorRepository;
@@ -28,12 +34,16 @@ namespace FlixNest.Areas.Admin.Controllers
         private ICountryRepository _countryRepository;
         private IEpisodeRepository _episodeRepository;
         private IAccountRepository _accountRepository;
+        private readonly UserManager<AccountUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         public TableController(FlixNestDbContext context, IMovieRepository movieRepository,
             IGenreRepository genreRepository, IMovieGenreRepository movieGenreRepository,
             IMovieActorRepository movieActorRepository, IMovieDirectorRepository movieDirectorRepository,
             IDirectorRepository directorRepository, IActorRepository actorRepository,
             ICountryRepository countryRepository, IYearRepository yearRepository,
-            IEpisodeRepository episodeRepository, IAccountRepository accountRepository)
+            IEpisodeRepository episodeRepository, IAccountRepository accountRepository,
+            UserManager<AccountUser> userManager, RoleManager<IdentityRole> roleManager,
+            FlixNestContext flixNestContext)
         {
             _context = context;
             _movieRepository = movieRepository;
@@ -47,6 +57,9 @@ namespace FlixNest.Areas.Admin.Controllers
             _countryRepository = countryRepository;
             _episodeRepository = episodeRepository;
             _accountRepository = accountRepository;
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _flixNestContext = flixNestContext;
         }
         public IActionResult Index()
         {
@@ -64,9 +77,12 @@ namespace FlixNest.Areas.Admin.Controllers
         }
         public IActionResult ListAccount()
         {
-            var account = _accountRepository.GetAll();
-            return View(account);
+            var getAllRoles = _accountRepository.GetAllRoles();
+            var userRolesViewModels = _accountRepository.GetAllUserRoles();
+            ViewBag.Roles = getAllRoles;
+            return View(userRolesViewModels);
         }
+       
         public IActionResult Table()
         {
             List<Year> years = _yearRepository.GetAll();

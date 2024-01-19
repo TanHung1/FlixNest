@@ -22,23 +22,21 @@ namespace FlixNest.Repository.ActorRepository
             return false;
         }
 
-        public bool CreateActor(Actor actor)
+        public void CreateActor(Actor actor)
         {
             _context.Actor.Add(actor);
             _context.SaveChanges();
             BackgroundJob.Enqueue(() => SuccessfulCreation(actor.ActId, actor.Fname, actor.Lname, "Tạo thành công"));
-
-            return true;
         }
 
-        public bool DeleteActor(int ActId)
+        public void DeleteActor(int ActId)
         {
             Actor act = _context.Actor.FirstOrDefault(x => x.ActId == ActId);
             _context.Actor.Remove(act);
             _context.SaveChanges();
             BackgroundJob.Enqueue(() => SuccessfulDeleted(act.ActId, act.Fname, act.Lname, "Xóa thành công"));
 
-            return true;
+
         }
 
         public Actor findActor(int ActId)
@@ -57,7 +55,7 @@ namespace FlixNest.Repository.ActorRepository
             return _context.Actor.ToDictionary(x => x.ActId, x => x.Fname + " " + x.Lname);
         }
 
-        public bool UpdateActor(Actor actor)
+        public void UpdateActor(Actor actor)
         {
             Actor act = _context.Actor.FirstOrDefault(x => x.ActId == actor.ActId);
             if (act != null)
@@ -69,7 +67,7 @@ namespace FlixNest.Repository.ActorRepository
                 BackgroundJob.Enqueue(() => SuccessfulUpdate(actor.ActId, actor.Fname, actor.Lname, "Cập nhật thành công"));
 
             }
-            return true;
+
         }
         public void SuccessfulCreation(int id, string name, string lname, string des)
         {

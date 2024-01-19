@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DXXYkemq3cP+uZAEzA5r2xq78DQTZHmavH2Zemu1ojw=",
+  "Hash": "IAamRpWvVG9zM81a4GDYdUiiMpvQcLZvWp2uujOW/3Y=",
   "Source": "FlixNest",
   "BasePath": "_content/FlixNest",
   "Mode": "Default",
@@ -2200,6 +2200,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\recent-3.jpg"
+    },
+    {
+      "Identity": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\recent-4.jpg",
+      "SourceId": "FlixNest",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\",
+      "BasePath": "_content/FlixNest",
+      "RelativePath": "images/recent-4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\recent-4.jpg"
     },
     {
       "Identity": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\recent-5.jpg",

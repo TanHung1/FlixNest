@@ -1,4 +1,5 @@
-﻿
+﻿@model List<(string UserId,  string RoleName, string FullName,string Email, string PhoneNubmer)>
+
 <div class="app-title">
     <div>
         <h1><i class="fa fa-th-list"></i> Data Table</h1>
@@ -17,32 +18,42 @@
                 <table class="table table-hover table-bordered" id="table5">
                     <thead>
                         <tr>
+                            <th>Số thứ tự</th>
                             <th>Họ tên</th>
                             <th>Email</th>
                             <th>Số điện thoại</th>
+                            <th>Vai trò</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            var stt = 1;
+                        }
                         @foreach (var item in Model)
                         {
+                            
                             <tr>
+                                <td>@stt</td>
                                 <td>@item.FullName</td>
                                 <td>@item.Email</td>
-                                <td>@item.PhoneNumber</td>
+                                <td>@item.PhoneNubmer</td>
+                                <td>@item.RoleName</td>
+
                                 <td>
                                     <div class="dropdown">
                                         <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                                            <i class="dw dw-more"></i>
+                                            Chọn<i class="dw dw-more"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                                            <a class="dropdown-item" asp-area="admin" asp-controller="Account" asp-action="UpdateAccount" asp-route-id="@item.Id"><i class="dw dw-edit2"></i> Edit</a>
-                                            <a class="dropdown-item" asp-controller="Account" asp-action="DeleteAccount" asp-route-id="@item.Id"
-                                            onclick="return confirm('Bạn có muốn xóa tài khoản này')"><i class="dw dw-delete-3"></i> Delete</a>
+                                            <a class="dropdown-item" asp-area="admin" asp-controller="Account" asp-action="UpdateAccount" asp-route-id="@item.UserId"><i class="dw dw-edit2"></i> Chỉnh sửa</a>
+                                            <a class="dropdown-item" asp-controller="Account" asp-action="DeleteAccount" asp-route-id="@item.UserId"
+                                            onclick="return confirm('Bạn có muốn xóa tài khoản này')"><i class="dw dw-delete-3"></i> Xóa</a>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
+                            stt++;
                         }
 
 
@@ -53,5 +64,53 @@
         </div>
     </div>
 </div>
+ <div class="row">
+    <div class="col-md-12">
+        <div class="tile">
+            <div class="tile-body">
+                <table class="table table-hover table-bordered" id="table6">
+                    <thead>
+                        <tr>
+                            <th>Số thứ tự</th>
+                            <th>Vai trò</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var number = 1;
+                        }
+                        @foreach (var role in ViewBag.Roles)
+                        {
 
+                            <tr>
+                                <td>@number</td>
+                                <td>@role.Name</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                            Chọn<i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" asp-area="admin" asp-controller="Account" asp-action="UpdateRole" asp-route-id="@role.Id">
+                                                <i class="dw dw-edit2"></i> Chỉnh sửa
+                                            </a>
+                                            <a class="dropdown-item" asp-area="admin" asp-controller="Account" asp-action="DeleteRole" asp-route-id="@role.Id">
+                                                <i class="dw dw-edit2"></i> Xóa</a>
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            number++;
+                        }
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> 
 

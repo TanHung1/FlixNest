@@ -9,7 +9,7 @@ namespace FlixNest.Repository.MovieActorRepository
         {
             _context = context;
         }
-        public bool createMovieActor(Movie movie, List<int> ActorList)
+        public void createMovieActor(Movie movie, List<int> ActorList)
         {
             foreach (var actorId in ActorList)
             {
@@ -24,12 +24,12 @@ namespace FlixNest.Repository.MovieActorRepository
                 _context.MovieActor.Add(movieactor);
                 _context.SaveChanges();
             }
-            return true;
+           
         }
 
 
 
-        public bool updateMovieActor(Movie movie, List<int> ActorList)
+        public void updateMovieActor(Movie movie, List<int> ActorList)
         {
             //lấy danh sách hiện tại của phim
             var existactor = _context.MovieActor.Where(x => x.MovieId == movie.MovieId).ToList();
@@ -51,7 +51,7 @@ namespace FlixNest.Repository.MovieActorRepository
             }
 
             _context.SaveChanges();
-            return true;
+            
         }
     }
 }

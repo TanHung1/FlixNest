@@ -7,9 +7,9 @@ namespace FlixNest.Repository.CountryRepository
         public List<Country> GetAll();
         public Country findbyId(int id);
 
-        public bool CreateCountry(Country country);
-        public bool UpdateCountry(Country country);
-        public bool DeleteCountry(int id);
+        public void CreateCountry(Country country);
+        public void UpdateCountry(Country country);
+        public void DeleteCountry(int id);
 
         public bool CheckNameCountry(string name);
 

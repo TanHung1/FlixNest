@@ -74,7 +74,7 @@
                                         }
                                     </ul>
                                 </li>
-                                @if(User.IsInRole("Administrator"))
+                                @if(User.IsInRole("Administrator") || User.IsInRole("Staff"))
                                 {
                                     <li><a asp-action="Index" asp-area="admin" asp-controller="Home">Quản lý</a></li>
                                 }

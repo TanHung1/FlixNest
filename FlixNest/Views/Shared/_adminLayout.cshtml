@@ -26,6 +26,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/multiple/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    @RenderSection("scripts", required: false)
 </head>
 <body class="app sidebar-mini rtl">
     <header class="app-header">
@@ -79,6 +80,7 @@
                     <li><a class="treeview-item" asp-area="admin" asp-action="CreateYear" asp-controller="Year"><i class="icon fa fa-circle-o"></i> Thêm năm phát hành</a></li>
                     <li><a class="treeview-item" asp-area="admin" asp-action="CreateEp" asp-controller="Episode"><i class="icon fa fa-circle-o"></i> Thêm tập phim</a></li>
                     <li><a class="treeview-item" asp-area="admin" asp-action="CreateAccount" asp-controller="Account"><i class="icon fa fa-circle-o"></i> Thêm tài khoản</a></li>
+                    <li><a class="treeview-item" asp-area="admin" asp-action="CreateRole" asp-controller="Account"><i class="icon fa fa-circle-o"></i> Thêm vai trò</a></li>
 
 
 
@@ -133,6 +135,7 @@
             $('#table5').DataTable();
             $('#table6').DataTable();
             $('#table7').DataTable();
+            $('#table8').DataTable();
             // ...
         });
     </script>

@@ -24,12 +24,12 @@
                 <table class="table table-hover table-bordered" id="table1">
                     <thead>
                         <tr>
-                            <th>Tên phim</th>
-                            <th>Giới thiệu phim</th>
+                            <th>Tên Phim</th>
                             <th>Năm ra phim</th>
                             <th>Thời lượng</th>
                             <th>Quốc gia</th>
                             <th>Hình ảnh</th>
+                            <th>Trạng thái</th>
                             <th>Action</th>
                             
                         </tr>
@@ -39,22 +39,31 @@
                         {
                             <tr>
                                 <td><a asp-action="Detail" asp-controller="Movie" asp-route-id="@item.MovieId">@item.MovieName</a></td>
-                                <td>@item.MovieTitle</td>
                                 <td>@(_yearRepository.findbyId(item.YearId)?.YearName)</td>
                                 <td>@item.MovieTime</td>
                                 <td>@(_countryRepository.findbyId(item.CountryId)?.CountryName)</td>
 
                                 <td><img src="~/images/@item.Image" style="width : 10%"></td>
+                                <Td>@item.Status</Td>
                                 <td>
                                     <div class="dropdown">
                                         <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                                            <i class="dw dw-more"></i>
+                                            Chọn<i class="dw dw-more"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                                            <a class="dropdown-item" asp-controller="Movie" asp-action="Detail" asp-route-id="@item.MovieId"><i class="dw dw-eye"></i> View</a>
-                                            <a class="dropdown-item" asp-controller="Movie" asp-action="UpdateMovie" asp-route-id="@item.MovieId"><i class="dw dw-edit2"></i> Edit</a>
-                                            <a class="dropdown-item" asp-controller="Movie" asp-action="DeleteMoivie" asp-route-id="@item.MovieId"
-                                            onclick="return confirm('Bạn có muốn xóa bộ phim này')"><i class="dw dw-delete-3"></i> Delete</a>
+                                            <a class="dropdown-item" asp-controller="Movie" asp-action="Detail" asp-route-id="@item.MovieId"><i class="dw dw-eye"></i> Chi tiết</a>
+                                            <a class="dropdown-item" asp-controller="Movie" asp-action="LogMovie" asp-route-id="@item.MovieId"><i class="dw dw-eye"></i>Nhật ký hoạt động</a>
+                                            @if (User.IsInRole("Administrator"))
+                                            {
+                                                <a class="dropdown-item" asp-controller="Movie" asp-action="ApproveMovie" asp-route-id="@item.MovieId"
+                                                   onclick="return confirm('Bạn có muốn phê duyệt bộ phim này')"><i class="dw dw-delete-3"></i> Chấp nhận</a>
+                                                <a class="dropdown-item" asp-controller="Movie" asp-action="RejectMovie" asp-route-id="@item.MovieId"
+                                                   onclick="return confirm('Bạn có muốn từ chối phế duyệt bộ phim này')"><i class="dw dw-delete-3"></i> Từ chối</a>
+                                                <a class="dropdown-item" asp-controller="Movie" asp-action="UpdateMovie" asp-route-id="@item.MovieId"><i class="dw dw-edit2"></i> Chỉnh sửa</a>
+                                                <a class="dropdown-item" asp-controller="Movie" asp-action="DeleteMoivie" asp-route-id="@item.MovieId"
+                                                   onclick="return confirm('Bạn có muốn xóa bộ phim này')"><i class="dw dw-delete-3"></i> Xóa tạm thời</a>
+                                            }
+                                           
                                         </div>
                                     </div>
                                 </td>
@@ -73,6 +82,12 @@
     <div class="col-md-12">
         <div class="tile">
             <div class="tile-body">
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger">
+                        <strong>Lỗi:</strong> @TempData["ErrorMessage"]
+                    </div>
+                }
                 <table class="table table-hover table-bordered" id="table2">
                     <thead>
                         <tr>
@@ -88,12 +103,12 @@
                                 <td>
                                     <div class="dropdown">
                                         <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                                            <i class="dw dw-more"></i>
+                                            Chọn<i class="dw dw-more"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                                            <a class="dropdown-item" asp-controller="Genre" asp-action="EditGenre" asp-route-id="@item.GenreId"><i class="dw dw-edit2"></i> Edit</a>
+                                            <a class="dropdown-item" asp-controller="Genre" asp-action="EditGenre" asp-route-id="@item.GenreId"><i class="dw dw-edit2"></i> Chỉnh sửa</a>
                                             <a class="dropdown-item" asp-controller="Genre" asp-action="DeleteGenre" asp-route-id="@item.GenreId"
-                                            onclick="return confirm('Bạn có muốn xóa thể loại này')"><i class="dw dw-delete-3"></i> Delete</a>
+                                            onclick="return confirm('Bạn có muốn xóa thể loại này')"><i class="dw dw-delete-3"></i> Xóa</a>
                                         </div>
                                     </div>
                                 </td>
@@ -124,12 +139,12 @@
                                 <td>
                                     <div class="dropdown">
                                         <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                                            <i class="dw dw-more"></i>
+                                            Chọn<i class="dw dw-more"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                                            <a class="dropdown-item" asp-controller="Actor" asp-action="EditActor" asp-route-id="@item.ActId"><i class="dw dw-edit2"></i> Edit</a>
+                                            <a class="dropdown-item" asp-controller="Actor" asp-action="EditActor" asp-route-id="@item.ActId"><i class="dw dw-edit2"></i> Chỉnh sửa</a>
                                             <a class="dropdown-item" asp-controller="Actor" asp-action="DeleteActor" asp-route-id="@item.ActId"
-                                            onclick="return confirm('Bạn có muốn xóa diễn viên này')"><i class="dw dw-delete-3"></i> Delete</a>
+                                            onclick="return confirm('Bạn có muốn xóa diễn viên này')"><i class="dw dw-delete-3"></i> Xóa</a>
                                         </div>
                                     </div>
                                 </td>
@@ -160,12 +175,12 @@
                                 <td>
                                     <div class="dropdown">
                                         <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                                            <i class="dw dw-more"></i>
+                                            Chọn<i class="dw dw-more"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                                            <a class="dropdown-item" asp-controller="Director" asp-action="EditDir" asp-route-id="@item.DirId"><i class="dw dw-edit2"></i> Edit</a>
+                                            <a class="dropdown-item" asp-controller="Director" asp-action="EditDir" asp-route-id="@item.DirId"><i class="dw dw-edit2"></i> Chỉnh sửa</a>
                                             <a class="dropdown-item" asp-controller="Director" asp-action="DeleteDirector" asp-route-id="@item.DirId"
-                                            onclick="return confirm('Bạn có muốn xóa đạo diễn này')"><i class="dw dw-delete-3"></i> Delete</a>
+                                            onclick="return confirm('Bạn có muốn xóa đạo diễn này')"><i class="dw dw-delete-3"></i> Xóa</a>
                                         </div>
                                     </div>
                                 </td>
@@ -177,3 +192,15 @@
         </div>
     </div>
 </div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            // Check for TempData message
+            var errorMessage = '@TempData["ErrorMessage"]';
+            if (errorMessage) {
+                alert(errorMessage);
+            }
+        });
+    </script>
+}

@@ -8,7 +8,6 @@ namespace FlixNest.Areas.Identity.Data
         [PersonalData]
         [Column(TypeName = "nvarchar(50)")]
         public string? FullName { get; set; }
-
-
+ 
     }
 }

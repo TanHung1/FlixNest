@@ -10,6 +10,7 @@ namespace FlixNest.Models
 
         public string Description { get; set; }
         public string Action { get; set; }
+        public Guid UserId { get; set; }
         public int MovieId { get; set; }
         [ForeignKey("MovieId")]
         public virtual Movie Movie { get; set; }

@@ -8,9 +8,9 @@ namespace FlixNest.Repository.MovieGenreRepository
 
         public MovieGenre findbyId(int movieId, int genreId);
 
-        public bool updateMovieGenre(Movie movie, List<int> GenreList);
+        public void updateMovieGenre(Movie movie, List<int> GenreList);
 
-        public bool createMovieGenre(Movie movie, List<int> GenreList);
+        public void createMovieGenre(Movie movie, List<int> GenreList);
 
     }
 }

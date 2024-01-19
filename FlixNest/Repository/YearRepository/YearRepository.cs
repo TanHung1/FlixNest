@@ -10,21 +10,21 @@ namespace FlixNest.Repository.YearRepository
         {
             _context = context;
         }
-        public bool CreateYear(Year year)
+        public void CreateYear(Year year)
         {
             _context.Years.Add(year);
             _context.SaveChanges();
             BackgroundJob.Enqueue(() => SuccessfulCreation(year.YearId, "Tạo thành công"));
-            return true;
+        
         }
 
-        public bool DeleteYear(int id)
+        public void DeleteYear(int id)
         {
             Year year = _context.Years.FirstOrDefault(x => x.YearId == id);
             _context.Years.Remove(year);
             _context.SaveChanges();
             BackgroundJob.Enqueue(() => SuccessfulDeleted(year.YearId, "Xóa thành công"));
-            return true;
+           
         }
 
         public List<Year> GetAll()
@@ -38,7 +38,7 @@ namespace FlixNest.Repository.YearRepository
             return year;
         }
 
-        public bool UpdateYear(Year year)
+        public void UpdateYear(Year year)
         {
             Year years = _context.Years.FirstOrDefault(x => x.YearId == year.YearId);
             if (year != null)
@@ -47,7 +47,7 @@ namespace FlixNest.Repository.YearRepository
                 _context.SaveChanges();
                 BackgroundJob.Enqueue(() => SuccessfulUpdate(year.YearId, "Cập nhật thành công"));
             }
-            return true;
+            
         }
 
         public bool CheckYear(string name)

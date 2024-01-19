@@ -2,6 +2,6 @@
 {
     public interface IMovieCommentRepository
     {
-        public bool UserComment(string userId, int MovieId, string title);
+        public void UserComment(string userId, int MovieId, string title);
     }
 }

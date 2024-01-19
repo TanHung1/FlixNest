@@ -28,6 +28,7 @@ builder.Services.AddControllersWithViews();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
 builder.Services.AddDbContext<FlixNestDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("FlixNest"));

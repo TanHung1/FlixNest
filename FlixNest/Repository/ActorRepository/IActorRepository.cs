@@ -7,9 +7,9 @@ namespace FlixNest.Repository.ActorRepository
         public List<Actor> GetAll();
 
         Dictionary<int, string> GetAllActors();
-        public bool CreateActor(Actor actor);
-        public bool UpdateActor(Actor actor);
-        public bool DeleteActor(int ActId);
+        public void CreateActor(Actor actor);
+        public void UpdateActor(Actor actor);
+        public void DeleteActor(int ActId);
 
         public Actor findActor(int ActId);
 

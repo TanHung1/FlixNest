@@ -21,6 +21,12 @@ namespace FlixNest.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult saveYear(Year year)
         {
+            bool isYearExist = _yearRepository.CheckYear(year.YearName);
+            if(isYearExist)
+            {
+                ModelState.AddModelError(string.Empty, "Năm này đã có");
+                return View("CreateYear");
+            }
             _yearRepository.CreateYear(year);
             return RedirectToAction("Table", "Table");
         }

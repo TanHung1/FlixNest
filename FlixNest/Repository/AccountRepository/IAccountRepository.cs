@@ -1,13 +1,22 @@
 ﻿using FlixNest.Areas.Identity.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace FlixNest.Repository.AccountRepository
 {
     public interface IAccountRepository
     {
-        public List<AccountUser> GetAll();
-        public bool CreateAccount(AccountUser accountUser);
+        public List<(string UserId, string FullName, string Email, string PhoneNubmer, string RoleName)> GetAllUserRoles();
 
-        public bool UpdateAccount(AccountUser accountUser);
+        public IEnumerable<IdentityRole> GetAllRoles();
+        public bool CreateAccount(AccountUser accountUser);
+        
+        public IdentityRole GetRoleById(string roleId);
+        public bool CreateRole(string  roleName);
+
+        public bool UpdateRole(IdentityRole role);
+        public bool DeleteRole(string roleId);
+
+        public bool UpdateAccount(AccountUser accountUser, string rolename);
 
         public AccountUser GetAccount(string id);
 

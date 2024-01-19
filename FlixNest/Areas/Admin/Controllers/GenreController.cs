@@ -28,7 +28,7 @@ namespace FlixNest.Areas.Admin.Controllers
 
 
         }
-
+     
         public IActionResult CreateGenre()
         {
             return View("CreateGenre", new Genre());
@@ -45,8 +45,15 @@ namespace FlixNest.Areas.Admin.Controllers
         }
         public IActionResult DeleteGenre(int id)
         {
+            bool isGenreUsed = _genreRepository.CheckGenreUsed(id);
+            if (isGenreUsed)
+            {
+                TempData["ErrorMessage"] = "Thể loại này đang được sử dụng trong một hoặc nhiều bộ phim.";
+                return RedirectToAction("Index", "Table", new { area = "admin" });
+            }
+
             _genreRepository.DeleteGenre(id);
-            return RedirectToAction("Index", "Table");
+            return RedirectToAction("Index", "Table", new { area = "admin" });
         }
     }
 }

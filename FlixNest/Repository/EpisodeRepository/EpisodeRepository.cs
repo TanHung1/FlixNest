@@ -25,7 +25,7 @@ namespace FlixNest.Repository.EpisodeRepository
             _context.EpisodeActivity.Add(activity);
             _context.SaveChanges();
         }
-        public bool CreateEpisode(Episode episode, Movie movie)
+        public void CreateEpisode(Episode episode, Movie movie)
         {
             _context.episodes.Add(episode);
             _context.SaveChanges();
@@ -33,10 +33,10 @@ namespace FlixNest.Repository.EpisodeRepository
             Eplog(episode, "Đã được thêm");
             BackgroundJob.Enqueue(() => SuccessfulCreation(episode.EpisodeId, episode.EpisodeName,movie.MovieName, "Tạo thành công"));
 
-            return true;
+
         }
 
-        public bool DeleteEpisode(int id)
+        public void DeleteEpisode(int id)
         {
             Episode episode = _context.episodes.FirstOrDefault(x => x.EpisodeId == id);
             if (episode != null)
@@ -47,8 +47,6 @@ namespace FlixNest.Repository.EpisodeRepository
 
                 _context.SaveChanges();
             }
-
-            return true;
         }
 
         public Episode findById(int id)
@@ -72,7 +70,7 @@ namespace FlixNest.Repository.EpisodeRepository
             return _context.episodes.Where(x => x.MovieId == movieId && !x.IsDeleted).ToList();
         }
 
-        public bool UpdateEpisode(Episode episode, Movie movie)
+        public void UpdateEpisode(Episode episode, Movie movie)
         {
             Episode ep = _context.episodes.FirstOrDefault(x => x.EpisodeId == episode.EpisodeId);
             if (episode != null)
@@ -85,7 +83,7 @@ namespace FlixNest.Repository.EpisodeRepository
                 BackgroundJob.Enqueue(() => SuccessfulUpdate(episode.EpisodeId, episode.EpisodeName, movie.MovieName, "Cập nhật thành công"));
 
             }
-            return true;
+            
         }
 
         public List<Episode> getEpisodeDelete()
@@ -93,7 +91,7 @@ namespace FlixNest.Repository.EpisodeRepository
             return _context.episodes.Where(x => x.IsDeleted).ToList();
         }
 
-        public bool RestoreEpisode(Episode episode)
+        public void RestoreEpisode(Episode episode)
         {
             Episode ep = _context.episodes.FirstOrDefault(x => x.EpisodeId == episode.EpisodeId);
             if (episode != null)
@@ -106,15 +104,15 @@ namespace FlixNest.Repository.EpisodeRepository
                 Eplog(episode, "Đã được cập nhật");
                
             }
-            return true;
+          
         }
 
-        public bool DeleteCompleteEpisode(int id)
+        public void DeleteCompleteEpisode(int id)
         {
             Episode episode = _context.episodes.FirstOrDefault(x => x.EpisodeId == id);
                 _context.episodes.Remove(episode);
                 _context.SaveChanges();
-            return true;
+           
         }
 
         public void SuccessfulCreation(int id, string name,string moviename, string des)

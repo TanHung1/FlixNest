@@ -9,7 +9,7 @@ namespace FlixNest.Repository.MovieDirectorRepository
         {
             _context = context;
         }
-        public bool createMovieDirector(Movie movie, List<int> DirList)
+        public void createMovieDirector(Movie movie, List<int> DirList)
         {
             foreach (var dirId in DirList)
             {
@@ -23,10 +23,10 @@ namespace FlixNest.Repository.MovieDirectorRepository
                 _context.MovieDirector.Add(movieDirector);
             }
             _context.SaveChanges();
-            return true;
+            
         }
 
-        public bool updateMovieDirector(Movie movie, List<int> DirList)
+        public void updateMovieDirector(Movie movie, List<int> DirList)
         {
             //1.Lấy danh sách bảng MovieDirector
             var existDirectors = _context.MovieDirector.Where(x => x.MovieId == movie.MovieId).ToList();
@@ -49,7 +49,7 @@ namespace FlixNest.Repository.MovieDirectorRepository
                 }
             }
             _context.SaveChanges();
-            return true;
+           
         }
     }
 }

@@ -33,9 +33,9 @@ namespace FlixNest.Controllers
             }
             return View(user);
         }
-        public IActionResult UpdateProfile(AccountUser user)
+        public IActionResult UpdateProfile(AccountUser user, string rolename)
         {
-            _accountRepository.UpdateAccount(user);
+            _accountRepository.UpdateAccount(user, rolename);
             return RedirectToAction("Index");
         }
         public IActionResult Following()

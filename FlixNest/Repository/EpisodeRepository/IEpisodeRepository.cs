@@ -5,13 +5,13 @@ namespace FlixNest.Repository.EpisodeRepository
     public interface IEpisodeRepository
     {
         public List<Episode> GetAllEpisodes();
-        public bool CreateEpisode(Episode episode, Movie movie);
+        public void CreateEpisode(Episode episode, Movie movie);
 
-        public bool UpdateEpisode(Episode episode, Movie movie);
-        public bool DeleteEpisode(int id);
+        public void UpdateEpisode(Episode episode, Movie movie);
+        public void DeleteEpisode(int id);
         public List<Episode> getEpisodeDelete();
-        public bool RestoreEpisode(Episode episode);
-        public bool DeleteCompleteEpisode(int id);
+        public void RestoreEpisode(Episode episode);
+        public void DeleteCompleteEpisode(int id);
         public Episode findById(int id);
 
         public List<Episode> GetEpisodeByMovieId(int movieId);

@@ -18,15 +18,17 @@ namespace FlixNest.Models
         public int CountryId { get; set; }
 
         public string Image { get; set; }
-
+        public string Status { get; set; }
         public int FollowerCount { get; set; }
 
         public bool IsDeleted { get; set; }
+        public bool IsCreated { get; set; }
         public List<MovieGenre> movieGenres { get; set; }
 
         public List<MovieDirector> movieDirectors { get; set; }
 
         public List<MovieActor> movieActors { get; set; }
+
 
         public ICollection<Episode> episodes { get; set; }
 

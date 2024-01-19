@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FlixNest.Areas.Admin.Controllers
 {
     [Area("admin")]
-    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles = "Administrator, Staff")]
     public class HomeController : Controller
     {
         private readonly SignInManager<AccountUser> _signInManager;

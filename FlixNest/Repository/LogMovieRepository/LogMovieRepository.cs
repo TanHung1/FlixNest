@@ -15,5 +15,11 @@ namespace FlixNest.Repository.LogMovieRepository
         {
             return _context.MovieActivity.ToList();
         }
+
+        public List<MovieActivity> getById(int id)
+        {
+            List<MovieActivity> movieActivities = _context.MovieActivity.Where(x => x.MovieId == id).ToList();
+            return movieActivities;
+        }
     }
 }

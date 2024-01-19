@@ -14,7 +14,7 @@ namespace FlixNest.Repository.MovieCommentRepository
             _userManager = userManager;
         }
 
-        public bool UserComment(string userId, int MovieId, string title)
+        public void UserComment(string userId, int MovieId, string title)
         {
             Guid userComment = Guid.Parse(userId);
             var movieCommnet = new MovieComment
@@ -25,7 +25,7 @@ namespace FlixNest.Repository.MovieCommentRepository
             };
             _context.MovieComments.Add(movieCommnet);
             _context.SaveChanges();
-            return true;
+         
 
         }
 

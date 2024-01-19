@@ -1,37 +1,53 @@
-﻿using FlixNest.Models;
+﻿using FlixNest.Areas.Identity.Data;
+using FlixNest.Models;
 using Hangfire;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
+using System.Security.Claims;
 
 namespace FlixNest.Repository.MovieRepository
 {
     public class MovieRepository : IMovieRepository
     {
         private FlixNestDbContext _context;
-
+        private readonly UserManager<AccountUser> _userManager;
+        private readonly IHttpContextAccessor _contextAccessor;
         public bool False { get; private set; }
 
-        public MovieRepository(FlixNestDbContext context)
+        public MovieRepository(FlixNestDbContext context, IHttpContextAccessor contextAccessor, UserManager<AccountUser> userManager)
         {
             _context = context;
-
+            _contextAccessor = contextAccessor;
+            _userManager = userManager;
         }
         private void AddMovieLog(Movie movie, string action)
         {
+            var userId = GetCurrentUserId();
             MovieActivity log = new MovieActivity
             {
                 MovieId = movie.MovieId,
                 Action = action,
                 DateTime = DateTime.Now,
                 Description = $"{action} (MovieId: {movie.MovieId} Tên phim: {movie.MovieName})",
+                UserId = userId,
             };
             _context.MovieActivity.Add(log);
             _context.SaveChanges();
 
         }
 
-        public bool CreateMovie(Movie movie, Episode episode)
+        private Guid GetCurrentUserId()
+        {
+            var userId = _contextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            return Guid.Parse(userId);
+        }
+
+        public void CreateMovie(Movie movie, Episode episode)
         {
             _context.Movie.Add(movie);
+            movie.Status = ConstantsFlixNest.Movie.WaittingForCreate;
+            movie.IsCreated = true;
             _context.SaveChanges();
 
             _context.episodes.Add(episode);
@@ -41,32 +57,75 @@ namespace FlixNest.Repository.MovieRepository
             episode.MovieId = movie.MovieId;
             _context.SaveChanges();
 
-            AddMovieLog(movie, "Đã được tạo");
-            BackgroundJob.Enqueue(() => SuccessfulCreation(movie.MovieId, "Tạo thành công"));
-            return true;
+            AddMovieLog(movie, "Đã được tạo và đang chờ duyệt");
+            BackgroundJob.Enqueue(() => SuccessfulCreation(movie.MovieId, "Tạo thành công"));            
+            
         }
-        public bool DeleteCompleteMovie(int id)
+
+        
+
+        public void  ApproveMovie(Movie movie)
+        {
+            Movie mov =  _context.Movie.FirstOrDefault(x => x.MovieId == movie.MovieId);
+            if (mov != null)
+            {
+                mov.MovieName = movie.MovieName;
+                mov.MovieTitle = movie.MovieTitle;
+                mov.MovieTime = movie.MovieTime;
+                mov.YearId = movie.YearId;
+                mov.CountryId = movie.CountryId;
+                mov.Status = ConstantsFlixNest.Movie.Approve;
+                mov.Image = movie.Image;
+                mov.IsDeleted = false;
+                mov.IsCreated = false;
+
+                _context.SaveChanges();
+
+                AddMovieLog(movie, "Đã phê duyệt bộ phim");
+            }
+
+        }
+
+        public void RejectMovie(Movie movie)
+        {
+            Movie mov = _context.Movie.FirstOrDefault(x => x.MovieId == movie.MovieId);
+            if (mov != null)
+            {
+                mov.MovieName = movie.MovieName;
+                mov.MovieTitle = movie.MovieTitle;
+                mov.MovieTime = movie.MovieTime;
+                mov.YearId = movie.YearId;
+                mov.Status = ConstantsFlixNest.Movie.Reject;
+                mov.CountryId = movie.CountryId;
+                mov.Image = movie.Image;
+                mov.IsDeleted = false;
+                mov.IsCreated = true;
+
+                _context.SaveChanges();
+
+                AddMovieLog(movie, "Bộ phim bị từ chối");
+            }
+        
+        }
+        public void DeleteCompleteMovie(int id)
         {
             Movie movie = _context.Movie.FirstOrDefault(x => x.MovieId == id);
-            AddMovieLog(movie, "Đã xóa vĩnh viễn");
+            //AddMovieLog(movie, "Đã xóa vĩnh viễn");
             _context.Movie.Remove(movie);
             _context.SaveChanges();
-            return true;
+          
         }
-        public bool DeleteMovie(int id)
+        public void DeleteMovie(int id)
         {
             Movie movie = _context.Movie.FirstOrDefault(x => x.MovieId == id);
             if (movie != null)
             {
                 movie.IsDeleted = true;
-
-                //_context.Movie.Remove(movie);
                 AddMovieLog(movie, "Đã xóa phim");
                 _context.SaveChanges(true);
                 BackgroundJob.Enqueue(() => SuccessfulDeleted(movie.MovieId, "Xóa thành công"));
-            }
-
-            return true;
+                BackgroundJob.Schedule(() => DeleteCompleteMovie(movie.MovieId), TimeSpan.FromHours(30));
+            }         
         }
 
         public Movie findbyId(int id)
@@ -78,7 +137,7 @@ namespace FlixNest.Repository.MovieRepository
         public List<Movie> Getallwith()
         {
             return _context.Movie
-                                  .Where(x => !x.IsDeleted)
+                                  .Where(x => !x.IsDeleted )
                                   .Include(x => x.movieGenres)
                                   .Include(x => x.movieActors)
                                   .Include(x => x.movieDirectors)
@@ -87,33 +146,33 @@ namespace FlixNest.Repository.MovieRepository
 
         public List<Movie> GetAll()
         {
-            return _context.Movie.Where(x => !x.IsDeleted).ToList();
+            return _context.Movie.Where(x => x.IsDeleted == false ).ToList();
         }
         public List<Movie> getMovieDelete()
         {
-            return _context.Movie.Where(x => x.IsDeleted).ToList();
+            return _context.Movie.Where(x => x.IsDeleted ).ToList();
         }
-        public bool RestoreMovie(Movie movie)
+        public void RestoreMovie(Movie movie)
         {
             Movie mov = _context.Movie.FirstOrDefault(x => x.MovieId == movie.MovieId);
             if (mov != null)
             {
-                mov.MovieName = movie.MovieName;
-                mov.MovieTitle = movie.MovieTitle;
-                mov.MovieTime = movie.MovieTime;
-                mov.YearId = movie.YearId;
-                mov.CountryId = movie.CountryId;
-                mov.Image = movie.Image;
+                //mov.MovieName = movie.MovieName;
+                //mov.MovieTitle = movie.MovieTitle;
+                //mov.MovieTime = movie.MovieTime;
+                //mov.YearId = movie.YearId;
+                //mov.CountryId = movie.CountryId;
+                //mov.Image = movie.Image;
                 mov.IsDeleted = false;
 
                 _context.SaveChanges();
 
                 AddMovieLog(movie, "Đã khôi phục bộ phim");
             }
-            return true;
+
 
         }
-        public bool UpdateMovie(Movie movie)
+        public void UpdateMovie(Movie movie)
         {
             //string desc;
             Movie mov = _context.Movie.FirstOrDefault(x => x.MovieId == movie.MovieId);
@@ -132,7 +191,7 @@ namespace FlixNest.Repository.MovieRepository
                 AddMovieLog(movie, "Đã cập nhật phim");
                 BackgroundJob.Enqueue(() => SuccessfulUpdate(movie.MovieId, "Cập nhật thành công"));
             }
-            return true;
+            
         }
 
         public Movie GetbyId(int id)
@@ -168,7 +227,7 @@ namespace FlixNest.Repository.MovieRepository
 
         public List<Movie> GetMoviebyFollower()
         {
-            return _context.Movie.OrderByDescending(x => x.FollowerCount).ToList();
+            return _context.Movie.Where(x => !x.IsDeleted && !x.IsCreated).OrderByDescending(x => x.FollowerCount).ToList();
         }
 
         public bool CheckNameMovie(string name)
@@ -202,6 +261,11 @@ namespace FlixNest.Repository.MovieRepository
         public void SuccessfulDeleted(int MovieId, string des)
         {
             Movie DeleteMovie = findbyId(MovieId);
+        }
+
+        public List<MovieActivity> GetMovieActivities(int id)
+        {
+            return _context.MovieActivity.Where(x => x.MovieId == id).ToList();
         }
     }
 }

@@ -22,8 +22,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxDcmVhdGVBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Account/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxDcmVhdGVSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Account/UpdateAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxVcGRhdGVBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Account/UpdateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxVcGRhdGVSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Account/UpdateUserRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxVcGRhdGVVc2VyUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Actor/CreateActor.cshtml]
@@ -100,6 +112,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/LogMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTW92aWVcTG9nTW92aWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProjectXemPhim/FlixNest/FlixNest/Areas/Admin/Views/Movie/MovieWaitingDelete.cshtml]

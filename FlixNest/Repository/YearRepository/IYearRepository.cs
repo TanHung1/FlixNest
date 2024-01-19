@@ -8,9 +8,9 @@ namespace FlixNest.Repository.YearRepository
         public Year findbyId(int id);
 
 
-        public bool CreateYear(Year year);
-        public bool UpdateYear(Year year);
-        public bool DeleteYear(int id);
+        public void CreateYear(Year year);
+        public void UpdateYear(Year year);
+        public void DeleteYear(int id);
         public bool CheckYear(string name);
     }
 }

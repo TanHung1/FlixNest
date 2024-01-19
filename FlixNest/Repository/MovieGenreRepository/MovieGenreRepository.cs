@@ -10,7 +10,7 @@ namespace FlixNest.Repository.MovieGenreRepository
             _context = context;
         }
 
-        public bool createMovieGenre(Movie movie, List<int> GenreList)
+        public void createMovieGenre(Movie movie, List<int> GenreList)
         {
             foreach (var genreId in GenreList)
             {
@@ -24,7 +24,7 @@ namespace FlixNest.Repository.MovieGenreRepository
                 _context.MovieGenre.Add(movieGenre);
                 _context.SaveChanges();
             }
-            return true;
+           
         }
 
         public MovieGenre findbyId(int movieId, int genreId)
@@ -39,7 +39,7 @@ namespace FlixNest.Repository.MovieGenreRepository
             return _context.MovieGenre.ToList();
         }
 
-        public bool updateMovieGenre(Movie movie, List<int> GenreList)
+        public void updateMovieGenre(Movie movie, List<int> GenreList)
         {
             //lấy danh sách thể loại hiện tại của phim
             var existingGenres = _context.MovieGenre.Where(x => x.MovieId == movie.MovieId).ToList();
@@ -65,7 +65,7 @@ namespace FlixNest.Repository.MovieGenreRepository
             }
             _context.SaveChanges();
 
-            return true;
+        
 
         }
     }

@@ -24,23 +24,22 @@ namespace FlixNest.Repository.DirectorRepository
             return true;
         }
 
-        public bool CreateDirector(Director director)
+        public void CreateDirector(Director director)
         {
             _context.Director.Add(director);
             _context.SaveChanges();
             BackgroundJob.Enqueue(() => SuccessfulCreation(director.DirId, director.Fname,director.LName, "Tạo thành công"));
 
-            return true;
         }
 
-        public bool DeleteDirector(int Id)
+        public void DeleteDirector(int Id)
         {
             Director director = _context.Director.FirstOrDefault(x => x.DirId == Id);
             _context.Director.Remove(director);
             _context.SaveChanges(true);
             BackgroundJob.Enqueue(() => SuccessfulDeleted(director.DirId,  "Xóa thành công"));
 
-            return true;
+        
         }
 
         public Director findbyId(int Id)
@@ -59,7 +58,7 @@ namespace FlixNest.Repository.DirectorRepository
             return _context.Director.ToDictionary(x => x.DirId, x => x.Fname + " " + x.LName);
         }
 
-        public bool UpdateDirector(Director director)
+        public void UpdateDirector(Director director)
         {
             Director dir = _context.Director.FirstOrDefault(x => x.DirId == director.DirId);
             if (dir != null)
@@ -70,7 +69,7 @@ namespace FlixNest.Repository.DirectorRepository
                 BackgroundJob.Enqueue(() => SuccessfulUpdate(director.DirId, director.Fname,director.LName, "Cập nhật thành công"));
 
             }
-            return true;
+           
         }
         public void SuccessfulCreation(int id, string name, string lname,string des)
         {

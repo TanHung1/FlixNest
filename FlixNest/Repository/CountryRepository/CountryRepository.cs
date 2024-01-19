@@ -22,22 +22,22 @@ namespace FlixNest.Repository.CountryRepository
             return true;
         }
 
-        public bool CreateCountry(Country country)
+        public void CreateCountry(Country country)
         {
             _context.Countries.Add(country);
             _context.SaveChanges();
             BackgroundJob.Enqueue(() => SuccessfulCreation(country.CountryId, country.CountryName, "Tạo thành công"));
 
-            return true;
+      
         }
 
-        public bool DeleteCountry(int id)
+        public void DeleteCountry(int id)
         {
             Country countries = _context.Countries.FirstOrDefault(x => x.CountryId == id);
             _context.Countries.Remove(countries);
             _context.SaveChanges();
             BackgroundJob.Enqueue(() => SuccessfulDeleted(countries.CountryId, "Xóa thành công"));
-            return true;
+         
         }
 
         public Country findbyId(int id)
@@ -51,7 +51,7 @@ namespace FlixNest.Repository.CountryRepository
             return _context.Countries.ToList();
         }
 
-        public bool UpdateCountry(Country country)
+        public void UpdateCountry(Country country)
         {
             Country countries = _context.Countries.FirstOrDefault(x => x.CountryId == country.CountryId);
             if (country != null)
@@ -61,7 +61,7 @@ namespace FlixNest.Repository.CountryRepository
                 BackgroundJob.Enqueue(() => SuccessfulUpdate(country.CountryId, country.CountryName, "Cập nhật thành công"));
 
             }
-            return true;
+          
 
         }
 
