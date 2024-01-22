@@ -1,9 +1,8 @@
-﻿@using FlixNest.Models;
+﻿
+    @using FlixNest.IAppServices;
 
-@using FlixNest.Repository.MovieRepository;
 
-
-@inject IMovieRepository _movieRepository;
+@inject IMovieService _movieService;
 
 <div class="app-title">
     <div>
@@ -37,7 +36,7 @@
                             <tr>
                                 <td>@item.EpisodeName</td>
                                 <td>@item.ReleaseDate</td>
-                                <td>@(_movieRepository.findbyId(item.MovieId)?.MovieName)</td>
+                                <td>@(_movieService.findbyId(item.MovieId)?.MovieName)</td>
 
 
                                 <td>

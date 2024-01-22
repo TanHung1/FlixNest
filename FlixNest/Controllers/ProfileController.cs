@@ -1,7 +1,6 @@
 ﻿using FlixNest.Areas.Identity.Data;
+using FlixNest.IAppServices;
 using FlixNest.Models;
-using FlixNest.Repository.AccountRepository;
-using FlixNest.Repository.FollowRepository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,17 +10,17 @@ namespace FlixNest.Controllers
     {
         private SignInManager<AccountUser> _signManager;
         private UserManager<AccountUser> _userManager;
-        private IFollowRepository _followRepository;
+        private IFollowService _followService;
         private FlixNestDbContext _context;
-        private IAccountRepository _accountRepository;
+        private IAccountService _accountService;
         public ProfileController(SignInManager<AccountUser> signManager, UserManager<AccountUser> userManager,
-            IFollowRepository followRepository, FlixNestDbContext context, IAccountRepository accountRepository)
+            IFollowService followService, FlixNestDbContext context, IAccountService accountService)
         {
             _signManager = signManager;
             _userManager = userManager;
-            _followRepository = followRepository;
+            _followService = followService;
             _context = context;
-            _accountRepository = accountRepository;
+            _accountService = accountService;
         }
 
         public async Task<IActionResult> Index()
@@ -35,7 +34,7 @@ namespace FlixNest.Controllers
         }
         public IActionResult UpdateProfile(AccountUser user, string rolename)
         {
-            _accountRepository.UpdateAccount(user, rolename);
+            _accountService.UpdateAccount(user, rolename);
             return RedirectToAction("Index");
         }
         public IActionResult Following()

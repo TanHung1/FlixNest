@@ -1,7 +1,7 @@
 ﻿using FlixNest.Areas.Identity.Data;
 using FlixNest.Data;
+using FlixNest.IAppServices;
 using FlixNest.Migrations;
-using FlixNest.Repository.AccountRepository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -12,14 +12,14 @@ namespace FlixNest.Areas.Admin.Controllers
     [Area("admin")]
     public class AccountController : Controller
     {
-        private IAccountRepository _accountRepository;
+        private IAccountService _accountService;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<AccountUser> _userManager;
         private readonly FlixNestContext _context;
-        public AccountController(IAccountRepository accountRepository, RoleManager<IdentityRole> roleManager
+        public AccountController(IAccountService accountService, RoleManager<IdentityRole> roleManager
             , UserManager<AccountUser> userManager, FlixNestContext context)
         {
-            _accountRepository = accountRepository;
+            _accountService = accountService;
             _roleManager = roleManager;
             _userManager = userManager;
             _context = context;
@@ -32,13 +32,13 @@ namespace FlixNest.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult saveAccount(AccountUser accountUser)
         {
-            _accountRepository.CreateAccount(accountUser);
+            _accountService.CreateAccount(accountUser);
             return RedirectToAction("ListAccount", "Table");
         }
 
         public IActionResult UpdateAccount(string id)
         {
-            var account = _accountRepository.GetAccount(id);
+            var account = _accountService.GetAccount(id);
             ViewBag.Roles = _roleManager.Roles.Select(r => new SelectListItem { Value = r.Name, Text = r.Name }).ToList();
 
             return View(account);
@@ -46,14 +46,14 @@ namespace FlixNest.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult EditAccount(AccountUser accountUser, string roleName)
         {
-            
-           _accountRepository.UpdateAccount(accountUser, roleName);
+
+            _accountService.UpdateAccount(accountUser, roleName);
             return RedirectToAction("ListAccount", "Table");
         }
 
         public IActionResult DeleteAccount(string id)
         {
-            _accountRepository.DeleteAccount(id);
+            _accountService.DeleteAccount(id);
             return RedirectToAction("ListAccount", "Table");
         }
 
@@ -65,23 +65,23 @@ namespace FlixNest.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult SaveRole(IdentityRole role)
         {
-            _accountRepository.CreateRole(role.Name);
+            _accountService.CreateRole(role.Name);
             return RedirectToAction("ListAccount", "Table");
         }
         public IActionResult DeleteRole(string id)
         {
-            _accountRepository.DeleteRole(id);
+            _accountService.DeleteRole(id);
             return RedirectToAction("ListAccount", "Table");
         }
         [HttpPost]
         public IActionResult EditRole (IdentityRole role)
         {
-            _accountRepository.UpdateRole(role);
+            _accountService.UpdateRole(role);
             return RedirectToAction("ListAccount", "Table");
         }
         public IActionResult UpdateRole(string id)
         {
-            var role = _accountRepository.GetRoleById(id);
+            var role = _accountService.GetRoleById(id);
             return View(role);
         }
     }

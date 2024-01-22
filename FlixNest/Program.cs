@@ -1,21 +1,8 @@
+using FlixNest.AppServices;
 using FlixNest.Areas.Identity.Data;
 using FlixNest.Data;
+using FlixNest.IAppServices;
 using FlixNest.Models;
-using FlixNest.Repository.AccountRepository;
-using FlixNest.Repository.ActorRepository;
-using FlixNest.Repository.CountryRepository;
-using FlixNest.Repository.DirectorRepository;
-using FlixNest.Repository.EpisodeRepository;
-using FlixNest.Repository.FollowRepository;
-using FlixNest.Repository.GenreRepository;
-using FlixNest.Repository.LogEpisodeRepository;
-using FlixNest.Repository.LogMovieRepository;
-using FlixNest.Repository.MovieActorRepository;
-using FlixNest.Repository.MovieCommentRepository;
-using FlixNest.Repository.MovieDirectorRepository;
-using FlixNest.Repository.MovieGenreRepository;
-using FlixNest.Repository.MovieRepository;
-using FlixNest.Repository.YearRepository;
 using Hangfire;
 using Hangfire.Dashboard;
 using Hangfire.SqlServer;
@@ -53,21 +40,21 @@ builder.Services.Configure<IdentityOptions>(option =>
 builder.Services.AddRazorPages();
 
 //Dependency Injection
-builder.Services.AddTransient<IActorRepository, ActorRepository>();
-builder.Services.AddTransient<IDirectorRepository, DirectorRepository>();
-builder.Services.AddTransient<IGenreRepository, GenreRepository>();
-builder.Services.AddTransient<IMovieRepository, MovieRepository>();
-builder.Services.AddTransient<IMovieGenreRepository, MovieGenreRepository>();
-builder.Services.AddTransient<IMovieActorRepository, MovieActorRepository>();
-builder.Services.AddTransient<IMovieDirectorRepository, MovieDirectorRepository>();
-builder.Services.AddTransient<IEpisodeRepository, EpisodeRepository>();
-builder.Services.AddTransient<IYearRepository, YearRepository>();
-builder.Services.AddTransient<ICountryRepository, CountryRepository>();
-builder.Services.AddTransient<IFollowRepository, FollowRepository>();
-builder.Services.AddTransient<IMovieCommentRepository, MovieCommentRepository>();
-builder.Services.AddTransient<IAccountRepository, AccountRepository>();
-builder.Services.AddTransient<ILogMovieRepository, LogMovieRepository>();
-builder.Services.AddTransient<ILogEpisodeRepository, LogEpisodeRepository>();
+builder.Services.AddTransient<IActorService, ActorService>();
+builder.Services.AddTransient<IDirectorService, DirectorService>();
+builder.Services.AddTransient<IGenreService, GenreService>();
+builder.Services.AddTransient<IMovieService, MovieService>();
+builder.Services.AddTransient<IMovieGenreService, MovieGenreService>();
+builder.Services.AddTransient<IMovieActorService, MovieActorService>();
+builder.Services.AddTransient<IMovieDirectorService, MovieDirectorService>();
+builder.Services.AddTransient<IEpisodeService, EpisodeService>();
+builder.Services.AddTransient<IYearService, YearService>();
+builder.Services.AddTransient<ICountryService, CountryService>();
+builder.Services.AddTransient<IFollowService, FollowService>();
+builder.Services.AddTransient<IMovieCommentService, MovieCommentService>();
+builder.Services.AddTransient<IAccountService, AccountService>();
+builder.Services.AddTransient<ILogMovieService, LogMovieService>();
+builder.Services.AddTransient<ILogEpisodeService, LogEpisodeService>();
 
 builder.Services.AddHangfire(configuration => configuration
                 .SetDataCompatibilityLevel(CompatibilityLevel.Version_180)

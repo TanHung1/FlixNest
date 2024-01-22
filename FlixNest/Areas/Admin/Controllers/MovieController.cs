@@ -1,15 +1,6 @@
 ﻿using FlixNest.Areas.Identity.Data;
+using FlixNest.IAppServices;
 using FlixNest.Models;
-using FlixNest.Repository.ActorRepository;
-using FlixNest.Repository.CountryRepository;
-using FlixNest.Repository.DirectorRepository;
-using FlixNest.Repository.EpisodeRepository;
-using FlixNest.Repository.GenreRepository;
-using FlixNest.Repository.MovieActorRepository;
-using FlixNest.Repository.MovieDirectorRepository;
-using FlixNest.Repository.MovieGenreRepository;
-using FlixNest.Repository.MovieRepository;
-using FlixNest.Repository.YearRepository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -21,45 +12,45 @@ namespace FlixNest.Areas.Admin.Controllers
     public class MovieController : Controller
     {
         private FlixNestDbContext _context;
-        private IMovieRepository _movieRepository;
-        private IGenreRepository _genreRepository;
-        private IActorRepository _actorRepository;
-        private IDirectorRepository _DirectorRepository;
-        private IMovieGenreRepository _movieGenreRepository;
-        private IMovieActorRepository _movieActorRepository;
-        private IMovieDirectorRepository _movieDirectorRepository;
-        private ICountryRepository _countryRepository;
-        private IYearRepository _yearRepository;
-        private IEpisodeRepository _episodeRepository;
+        private IMovieService _movieService;
+        private IGenreService _genreService;
+        private IActorService _actorService;
+        private IDirectorService _DirectorService;
+        private IMovieGenreService _movieGenreService;
+        private IMovieActorService _movieActorService;
+        private IMovieDirectorService _movieDirectorService;
+        private ICountryService _countryService;
+        private IYearService _yearService;
+        private IEpisodeService _episodeService;
         private readonly UserManager<AccountUser> _userManager;
         private SignInManager<AccountUser> _signInManager;
-        public MovieController(FlixNestDbContext context, IMovieRepository movieRepository,
-            IGenreRepository genreRepository, IMovieGenreRepository movieGenreRepository,
-            IMovieActorRepository movieActorRepository, IMovieDirectorRepository movieDirectorRepository,
-            IDirectorRepository directorRepository, IActorRepository actorRepository,
-            IYearRepository yearRepository, ICountryRepository countryRepository,
-            IEpisodeRepository episodeRepository, UserManager<AccountUser> userManager,
+        public MovieController(FlixNestDbContext context, IMovieService movieService,
+            IGenreService genreService, IMovieGenreService movieGenreService,
+            IMovieActorService movieActorService, IMovieDirectorService movieDirectorService,
+            IDirectorService directorService, IActorService actorService,
+            IYearService yearService, ICountryService countryService,
+            IEpisodeService episodeService, UserManager<AccountUser> userManager,
             SignInManager<AccountUser> signInManager)
         {
             _context = context;
-            _movieRepository = movieRepository;
-            _genreRepository = genreRepository;
-            _actorRepository = actorRepository;
-            _DirectorRepository = directorRepository;
-            _movieGenreRepository = movieGenreRepository;
-            _movieActorRepository = movieActorRepository;
-            _movieDirectorRepository = movieDirectorRepository;
-            _countryRepository = countryRepository;
-            _yearRepository = yearRepository;
-            _episodeRepository = episodeRepository;
+            _movieService = movieService;
+            _genreService = genreService;
+            _actorService = actorService;
+            _DirectorService = directorService;
+            _movieGenreService = movieGenreService;
+            _movieActorService = movieActorService;
+            _movieDirectorService = movieDirectorService;
+            _countryService = countryService;
+            _yearService = yearService;
+            _episodeService = episodeService;
             _userManager = userManager;
             _signInManager = signInManager;
         }
         public async Task<IActionResult> LogMovie(int id)
         {
-            Movie movie = _movieRepository.findbyId(id);
+            Movie movie = _movieService.findbyId(id);
             var movieGenres = _context.MovieGenre.Where(x => x.MovieId == id).Select(x => x.Genre).ToList();
-            List<MovieActivity> movieActivities = _movieRepository.GetMovieActivities(id);
+            List<MovieActivity> movieActivities = _movieService.GetMovieActivities(id);
             var userNames = new Dictionary<Guid, string>();
             foreach (var activity in movieActivities) 
             { 
@@ -74,9 +65,9 @@ namespace FlixNest.Areas.Admin.Controllers
         }
         public IActionResult Detail(int id)
         {
-            Movie movie = _movieRepository.findbyId(id);
-            List<Episode> episodes = _episodeRepository.GetEpisodeByMovieId(id);
-            List<MovieActivity> movieActivities = _movieRepository.GetMovieActivities(id);
+            Movie movie = _movieService.findbyId(id);
+            List<Episode> episodes = _episodeService.GetEpisodeByMovieId(id);
+            List<MovieActivity> movieActivities = _movieService.GetMovieActivities(id);
             var movieGenres = _context.MovieGenre.Where(x => x.MovieId == id).Select(x => x.Genre).ToList();
             var actorGenres = _context.MovieActor.Where(x => x.MovieId == id).Select(x => x.Actor).ToList();
             var directorGenres = _context.MovieDirector.Where(x => x.MovieId == id).Select(x => x.Director).ToList();
@@ -90,14 +81,14 @@ namespace FlixNest.Areas.Admin.Controllers
         }       
         public IActionResult CreateMovie()
         {
-            var q1 = _yearRepository.GetAll()
+            var q1 = _yearService.GetAll()
                .Select(q1 => new SelectListItem()
                {
                    Text = q1.YearName,
                    Value = q1.YearId.ToString(),
                }).ToList();
             ViewBag.Year = q1;
-            var q2 = _countryRepository.GetAll()
+            var q2 = _countryService.GetAll()
                 .Select(q2 => new SelectListItem()
                 {
                     Text = q2.CountryName,
@@ -144,17 +135,17 @@ namespace FlixNest.Areas.Admin.Controllers
             }
             else
             {
-                Movie currentVideo = _movieRepository.findbyId(movie.MovieId);
+                Movie currentVideo = _movieService.findbyId(movie.MovieId);
                 movie.Image = currentVideo.Image;
             }
-            var q1 = _yearRepository.GetAll()
+            var q1 = _yearService.GetAll()
                 .Select(q1 => new SelectListItem()
                 {
                     Text = q1.YearName,
                     Value = q1.YearId.ToString(),
                 }).ToList();
             ViewBag.Year = q1;
-            var q2 = _countryRepository.GetAll()
+            var q2 = _countryService.GetAll()
                 .Select(q2 => new SelectListItem()
                 {
                     Text = q2.CountryName,
@@ -163,16 +154,16 @@ namespace FlixNest.Areas.Admin.Controllers
 
 
             ViewBag.Country = q2;
-            _movieRepository.CreateMovie(movie, episode);
-            _movieGenreRepository.createMovieGenre(movie, GenreList);
-            _movieActorRepository.createMovieActor(movie, ActList);
-            _movieDirectorRepository.createMovieDirector(movie, DirectorList);
+            _movieService.CreateMovie(movie, episode);
+            _movieGenreService.createMovieGenre(movie, GenreList);
+            _movieActorService.createMovieActor(movie, ActList);
+            _movieDirectorService.createMovieDirector(movie, DirectorList);
 
             return RedirectToAction("Index", "Table");
         }
         public IActionResult UpdateMovie(int id)
         {
-            Movie movie = _movieRepository.findbyId(id);
+            Movie movie = _movieService.findbyId(id);
 
             // Load selected genres
             var movieGenres = _context.MovieGenre.Where(mg => mg.MovieId == id)
@@ -209,14 +200,14 @@ namespace FlixNest.Areas.Admin.Controllers
             }).ToList();
             ViewBag.DirectorId = alldirectors;
 
-            var q1 = _yearRepository.GetAll()
+            var q1 = _yearService.GetAll()
                .Select(q1 => new SelectListItem()
                {
                    Text = q1.YearName,
                    Value = q1.YearId.ToString(),
                }).ToList();
             ViewBag.Year = q1;
-            var q2 = _countryRepository.GetAll()
+            var q2 = _countryService.GetAll()
                 .Select(q2 => new SelectListItem()
                 {
                     Text = q2.CountryName,
@@ -243,17 +234,17 @@ namespace FlixNest.Areas.Admin.Controllers
             }
             else
             {
-                Movie currentMovie = _movieRepository.findbyId(movie.MovieId);
+                Movie currentMovie = _movieService.findbyId(movie.MovieId);
                 movie.Image = currentMovie.Image;
             }
-            var q1 = _yearRepository.GetAll()
+            var q1 = _yearService.GetAll()
                .Select(q1 => new SelectListItem()
                {
                    Text = q1.YearName,
                    Value = q1.YearId.ToString(),
                }).ToList();
             ViewBag.Year = q1;
-            var q2 = _countryRepository.GetAll()
+            var q2 = _countryService.GetAll()
                 .Select(q2 => new SelectListItem()
                 {
                     Text = q2.CountryName,
@@ -261,10 +252,10 @@ namespace FlixNest.Areas.Admin.Controllers
                 }).ToList();
             ViewBag.Country = q2;
             // Cập nhật thông tin phim
-            _movieRepository.UpdateMovie(movie);
-            _movieGenreRepository.updateMovieGenre(movie, GenreList);
-            _movieActorRepository.updateMovieActor(movie, ActList);
-            _movieDirectorRepository.updateMovieDirector(movie, DirectorList);
+            _movieService.UpdateMovie(movie);
+            _movieGenreService.updateMovieGenre(movie, GenreList);
+            _movieActorService.updateMovieActor(movie, ActList);
+            _movieDirectorService.updateMovieDirector(movie, DirectorList);
             return RedirectToAction("Index", "Table");
         }
         //// tao entity DataHistoryForReview{
@@ -276,45 +267,45 @@ namespace FlixNest.Areas.Admin.Controllers
         //// }
         public IActionResult DeleteMoivie(int id)
         {
-            _movieRepository.DeleteMovie(id);
+            _movieService.DeleteMovie(id);
             
             return RedirectToAction("Index", "Table");
         }
         public IActionResult MovieWaitingDelete()
         {
-            List<Movie> movies = _movieRepository.getMovieDelete();
+            List<Movie> movies = _movieService.getMovieDelete();
             return View(movies);   
         }
         public IActionResult DeleteComple(int id)
         {
-            _movieRepository.DeleteCompleteMovie(id);
+            _movieService.DeleteCompleteMovie(id);
             return RedirectToAction("Index", "Table");
         }
 
         public IActionResult ReStoreMovie(int id)
         {
-            Movie movie = _movieRepository.findbyId(id); 
+            Movie movie = _movieService.findbyId(id); 
             if (movie != null)
             {
-                _movieRepository.RestoreMovie(movie);
+                _movieService.RestoreMovie(movie);
             }
             return RedirectToAction("Index", "Table");
         }
         public IActionResult ApproveMovie(int id)
         {
-            Movie movie = _movieRepository.findbyId(id);
+            Movie movie = _movieService.findbyId(id);
             if(movie != null)
             {
-                _movieRepository.ApproveMovie(movie);
+                _movieService.ApproveMovie(movie);
             }
             return RedirectToAction("Index", "Table");
         }
         public IActionResult RejectMovie(int id)
         {
-            Movie movie = _movieRepository.findbyId(id);
+            Movie movie = _movieService.findbyId(id);
             if( movie != null)
             {
-                _movieRepository.RejectMovie(movie);
+                _movieService.RejectMovie(movie);
             }
             return RedirectToAction("Index", "Table");
         }

@@ -1,5 +1,5 @@
-﻿using FlixNest.Models;
-using FlixNest.Repository.CountryRepository;
+﻿using FlixNest.IAppServices;
+using FlixNest.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FlixNest.Areas.Admin.Controllers
@@ -7,10 +7,10 @@ namespace FlixNest.Areas.Admin.Controllers
     [Area("admin")]
     public class CountryController : Controller
     {
-        private ICountryRepository _countryRepository;
-        public CountryController(ICountryRepository countryRepository)
+        private ICountryService _countryService;
+        public CountryController(ICountryService countryService)
         {
-            _countryRepository = countryRepository;
+            _countryService = countryService;
         }
 
         public IActionResult CreateCountry()
@@ -20,23 +20,23 @@ namespace FlixNest.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult saveCountry(Country country)
         {
-            _countryRepository.CreateCountry(country);
+            _countryService.CreateCountry(country);
             return RedirectToAction("Table", "Table");
         }
         public IActionResult UpdateCountry(int id)
         {
-            return View("UpdateCountry", _countryRepository.findbyId(id));
+            return View("UpdateCountry", _countryService.findbyId(id));
 
         }
         [HttpPost]
         public IActionResult EditCountry(Country country)
         {
-            _countryRepository.UpdateCountry(country);
+            _countryService.UpdateCountry(country);
             return RedirectToAction("Table", "Table");
         }
         public IActionResult DeleteCountry(int id)
         {
-            _countryRepository.DeleteCountry(id);
+            _countryService.DeleteCountry(id);
             return RedirectToAction("Table", "Table");
         }
     }

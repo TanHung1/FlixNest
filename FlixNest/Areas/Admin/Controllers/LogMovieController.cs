@@ -1,5 +1,5 @@
-﻿using FlixNest.Models;
-using FlixNest.Repository.LogMovieRepository;
+﻿using FlixNest.IAppServices;
+using FlixNest.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FlixNest.Areas.Admin.Controllers
@@ -7,14 +7,14 @@ namespace FlixNest.Areas.Admin.Controllers
     [Area("admin")]
     public class LogMovieController : Controller
     {
-        private ILogMovieRepository _logMovieRepository;
-        public LogMovieController(ILogMovieRepository logMovieRepository)
+        private ILogMovieService _logMovieService;
+        public LogMovieController(ILogMovieService logMovieService)
         {
-            _logMovieRepository = logMovieRepository;
+            _logMovieService = logMovieService;
         }
         public IActionResult Index()
         {
-            List<MovieActivity> logMovies = _logMovieRepository.getAll();
+            List<MovieActivity> logMovies = _logMovieService.getAll();
             return View(logMovies);
         }
     }

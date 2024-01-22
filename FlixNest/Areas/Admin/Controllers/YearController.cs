@@ -1,5 +1,5 @@
-﻿using FlixNest.Models;
-using FlixNest.Repository.YearRepository;
+﻿using FlixNest.IAppServices;
+using FlixNest.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FlixNest.Areas.Admin.Controllers
@@ -7,10 +7,10 @@ namespace FlixNest.Areas.Admin.Controllers
     [Area("admin")]
     public class YearController : Controller
     {
-        private IYearRepository _yearRepository;
-        public YearController(IYearRepository yearRepository)
+        private IYearService _yearService;
+        public YearController(IYearService yearService)
         {
-            _yearRepository = yearRepository;
+            _yearService = yearService;
         }
 
         public IActionResult CreateYear()
@@ -21,28 +21,28 @@ namespace FlixNest.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult saveYear(Year year)
         {
-            bool isYearExist = _yearRepository.CheckYear(year.YearName);
+            bool isYearExist = _yearService.CheckYear(year.YearName);
             if(isYearExist)
             {
                 ModelState.AddModelError(string.Empty, "Năm này đã có");
                 return View("CreateYear");
             }
-            _yearRepository.CreateYear(year);
+            _yearService.CreateYear(year);
             return RedirectToAction("Table", "Table");
         }
         public IActionResult UpdateYear(int id)
         {
-            return View("UpdateYear", _yearRepository.findbyId(id));
+            return View("UpdateYear", _yearService.findbyId(id));
         }
         [HttpPost]
         public IActionResult EditYear(Year year)
         {
-            _yearRepository.UpdateYear(year);
+            _yearService.UpdateYear(year);
             return RedirectToAction("Table", "Table");
         }
         public IActionResult DeleteYear(int id)
         {
-            _yearRepository.DeleteYear(id);
+            _yearService.DeleteYear(id);
             return RedirectToAction("Table", "Table");
         }
     }

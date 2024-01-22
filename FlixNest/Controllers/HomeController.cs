@@ -1,9 +1,6 @@
 ﻿using FlixNest.Areas.Identity.Data;
+using FlixNest.IAppServices;
 using FlixNest.Models;
-using FlixNest.Repository.EpisodeRepository;
-using FlixNest.Repository.FollowRepository;
-using FlixNest.Repository.MovieCommentRepository;
-using FlixNest.Repository.MovieRepository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -13,26 +10,26 @@ namespace FlixNest.Controllers
 {
     public class HomeController : Controller
     {
-        private IEpisodeRepository _episodeRepository;
-        private IMovieRepository _movieRepository;
+        private IEpisodeService _episodeService;
+        private IMovieService _movieService;
         private FlixNestDbContext _context;
         private SignInManager<AccountUser> _signInManager;
         private UserManager<AccountUser> _userManager;
-        private IFollowRepository _followRepository;
+        private IFollowService _followService;
 
 
-        private IMovieCommentRepository _movieCommentRepository;
-        public HomeController(IEpisodeRepository episodeRepository, IMovieRepository movieRepository, FlixNestDbContext context
-            , SignInManager<AccountUser> signInManager, UserManager<AccountUser> userManager, IFollowRepository followRepository
-            , IMovieCommentRepository movieCommentRepository)
+        private IMovieCommentService _movieCommentService;
+        public HomeController(IEpisodeService episodeService, IMovieService movieService, FlixNestDbContext context
+            , SignInManager<AccountUser> signInManager, UserManager<AccountUser> userManager, IFollowService followService
+            , IMovieCommentService movieCommentService)
         {
-            _episodeRepository = episodeRepository;
-            _movieRepository = movieRepository;
+            _episodeService = episodeService;
+            _movieService = movieService;
             _context = context;
             _signInManager = signInManager;
             _userManager = userManager;
-            _followRepository = followRepository;
-            _movieCommentRepository = movieCommentRepository;
+            _followService = followService;
+            _movieCommentService = movieCommentService;
 
         }
 
@@ -43,15 +40,15 @@ namespace FlixNest.Controllers
         }
         public IActionResult GetallMoviebyFollower()
         {
-            List<Movie> movies = _movieRepository.GetMoviebyFollower();
+            List<Movie> movies = _movieService.GetMoviebyFollower();
             return View(movies);
         }
         public IActionResult GetallNewMovie(int? Page)
         {
             int pageNumber = Page ?? 1;
             int pageSize = 6;
-            List<Episode> episodes = _episodeRepository.GetEpbyTime().ToList();
-            List<Movie> allMovies = _movieRepository.GetAll();
+            List<Episode> episodes = _episodeService.GetEpbyTime().ToList();
+            List<Movie> allMovies = _movieService.GetAll();
             List<Movie> movieEpbyDate = episodes.GroupBy(x => x.MovieId)
                                                 .Select(group => group.OrderByDescending(x => x.ReleaseDate).FirstOrDefault()?.Movie)
                                                 .Where(movie => movie != null)
@@ -62,13 +59,13 @@ namespace FlixNest.Controllers
         }
         public IActionResult Index()
         {
-            List<Movie> movies = _movieRepository.GetMoviebyFollower().Take(3).ToList();
-            List<Episode> episodes = _episodeRepository.GetEpbyTime().Take(6).ToList();
+            List<Movie> movies = _movieService.GetMoviebyFollower().Take(3).ToList();
+            List<Episode> episodes = _episodeService.GetEpbyTime().Take(6).ToList();
             List<Movie> movieEpbyDate = episodes.GroupBy(x => x.MovieId)
                                                 .Select(group => group.OrderByDescending(x => x.ReleaseDate).First().Movie)
                                                 .Where(movie => movie != null)
                                                 .ToList();
-            List<Movie> top6FollowedMovies = _movieRepository.GetMoviebyFollower().Take(6).ToList();
+            List<Movie> top6FollowedMovies = _movieService.GetMoviebyFollower().Take(6).ToList();
             ViewBag.MovieFollow = movies;
             ViewBag.movieEpTime = movieEpbyDate;
             ViewBag.Top6FollowedMovies = top6FollowedMovies;
@@ -78,8 +75,8 @@ namespace FlixNest.Controllers
         [HttpPost]
         public IActionResult Commnent(string userId, int MovieId, string title)
         {
-            Movie movie = _movieRepository.findbyId(MovieId);
-            _movieCommentRepository.UserComment(userId, MovieId, title);
+            Movie movie = _movieService.findbyId(MovieId);
+            _movieCommentService.UserComment(userId, MovieId, title);
             return RedirectToAction("Detail", new { id = MovieId });
         }
 
@@ -87,14 +84,14 @@ namespace FlixNest.Controllers
         [Authorize]
         public IActionResult Follow(int movieId, string userId)
         {
-            Movie movie = _movieRepository.findbyId(movieId);
-            _followRepository.FollowMovie(userId, movieId);
+            Movie movie = _movieService.findbyId(movieId);
+            _followService.FollowMovie(userId, movieId);
             return RedirectToAction("Detail", new { id = movieId });
         }
         [Authorize]
         public IActionResult UnFollow(int movieId)
         {
-            Movie movie = _movieRepository.findbyId(movieId);
+            Movie movie = _movieService.findbyId(movieId);
             // Get the current user's id
             var userId = _userManager.GetUserId(User);
             Guid userfollow = Guid.Parse(userId);
@@ -122,8 +119,8 @@ namespace FlixNest.Controllers
         public async Task<IActionResult> Detail(int id)
         {
             var movieCommnet = _context.MovieComments.Where(x => x.MovieId == id).ToList();
-            Movie movie = _movieRepository.findbyId(id);
-            List<Episode> episodes = _episodeRepository.GetEpisodeByMovieId(id);
+            Movie movie = _movieService.findbyId(id);
+            List<Episode> episodes = _episodeService.GetEpisodeByMovieId(id);
             var MovieGenres = _context.MovieGenre.Where(x => x.MovieId == id).Select(x => x.Genre).ToList();
             Episode firstEp = episodes.FirstOrDefault();
 
@@ -145,10 +142,10 @@ namespace FlixNest.Controllers
 
         public IActionResult watching(int id)
         {
-            Episode selectedEpisode = _episodeRepository.findById(id);
+            Episode selectedEpisode = _episodeService.findById(id);
 
-            Movie movie = _movieRepository.findbyId(selectedEpisode.MovieId);
-            List<Episode> episodes = _episodeRepository.GetEpisodeByMovieId(selectedEpisode.MovieId);
+            Movie movie = _movieService.findbyId(selectedEpisode.MovieId);
+            List<Episode> episodes = _episodeService.GetEpisodeByMovieId(selectedEpisode.MovieId);
 
             ViewBag.Movie = movie;
             ViewBag.Episodes = episodes;
@@ -157,22 +154,22 @@ namespace FlixNest.Controllers
         }
         public IActionResult findMovieByYear(int id)
         {
-            List<Movie> movies = _movieRepository.GetMoviebyYear(id);
+            List<Movie> movies = _movieService.GetMoviebyYear(id);
             return View(movies);
         }
         public IActionResult findMovieByGenre(int genreId)
         {
-            List<Movie> movies = _movieRepository.GetMovieByGenreName(genreId);
+            List<Movie> movies = _movieService.GetMovieByGenreName(genreId);
             return View(movies);
         }
         public IActionResult findbyMovieName(string name)
         {
-            List<Movie> movies = _movieRepository.findMoviebyName(name);
+            List<Movie> movies = _movieService.findMoviebyName(name);
             return View(movies);
         }
         public IActionResult findMovieByCountry(int id)
         {
-            List<Movie> movies = _movieRepository.GetMoviebyCountry(id);
+            List<Movie> movies = _movieService.GetMoviebyCountry(id);
             return View(movies);
         }
     }

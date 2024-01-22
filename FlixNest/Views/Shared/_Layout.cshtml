@@ -1,14 +1,10 @@
 ﻿@using Microsoft.AspNetCore.Identity;
 @using FlixNest.Areas.Identity.Data;
-
-@using FlixNest.Repository.MovieRepository;
-@using FlixNest.Repository.YearRepository;
-@using FlixNest.Repository.GenreRepository;
-@using FlixNest.Repository.CountryRepository;
-@inject ICountryRepository countryRepository;
-@inject IGenreRepository genreRepository;
-@inject IMovieRepository movierepository;
-@inject IYearRepository yearRepository;
+@using FlixNest.IAppServices;
+@inject ICountryService countryService;
+@inject IGenreService genreService;
+@inject IMovieService movieService;
+@inject IYearService yearService;
 @inject SignInManager<AccountUser> SignInManager;
 @inject UserManager<AccountUser> UserManager;
 <!DOCTYPE html>
@@ -50,7 +46,7 @@
                                 <li>
                                     <a href="./categories.html">Thể loại <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        @foreach (var genre in genreRepository.GetAll())
+                                        @foreach (var genre in genreService.GetAll())
                                         {
                                             <li><a asp-action="findMovieByGenre" asp-controller="Home" asp-route-genreId="@genre.GenreId">@genre.GenreName</a></li>
                                         }
@@ -59,7 +55,7 @@
                                 <li>
                                     <a href="./categories.html">Năm phát hành <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                       @foreach(var item in yearRepository.GetAll())
+                                       @foreach(var item in yearService.GetAll())
                                         {
                                             <li><a asp-action="findMovieByYear" asp-controller="Home"asp-route-id="@item.YearId">@item.YearName</a></li>
                                         }                                      
@@ -68,7 +64,7 @@
                                 <li>
                                     <a href="./categories.html">Quốc gia <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        @foreach (var item in countryRepository.GetAll())
+                                        @foreach (var item in countryService.GetAll())
                                         {
                                             <li><a asp-action="findMovieByCountry" asp-controller="Home" asp-route-id="@item.CountryId">@item.CountryName</a></li>
                                         }

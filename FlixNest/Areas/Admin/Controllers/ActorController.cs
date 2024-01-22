@@ -1,5 +1,5 @@
-﻿using FlixNest.Models;
-using FlixNest.Repository.ActorRepository;
+﻿using FlixNest.IAppServices;
+using FlixNest.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FlixNest.Areas.Admin.Controllers
@@ -7,17 +7,17 @@ namespace FlixNest.Areas.Admin.Controllers
     [Area("admin")]
     public class ActorController : Controller
     {
-        private IActorRepository _actorRepository;
+        private IActorService _actorService;
 
-        public ActorController(IActorRepository actorRepository)
+        public ActorController(IActorService actorService)
         {
-            _actorRepository = actorRepository;
+            _actorService = actorService;
         }
         [HttpPost]
         public IActionResult saveActor(Actor actor)
         {
 
-            _actorRepository.CreateActor(actor);
+            _actorService.CreateActor(actor);
             return RedirectToAction("Index", "Table");
         }
         public IActionResult CreateActor()
@@ -27,18 +27,18 @@ namespace FlixNest.Areas.Admin.Controllers
 
         public IActionResult DeleteActor(int id)
         {
-            _actorRepository.DeleteActor(id);
+            _actorService.DeleteActor(id);
             return RedirectToAction("Index", "Table");
         }
         [HttpPost]
         public IActionResult UpdateActor(Actor actor)
         {
-            _actorRepository.UpdateActor(actor);
+            _actorService.UpdateActor(actor);
             return RedirectToAction("Index", "Table");
         }
         public IActionResult EditActor(int id)
         {
-            return View("EditActor", _actorRepository.findActor(id));
+            return View("EditActor", _actorService.findActor(id));
         }
     }
 }

@@ -1,11 +1,9 @@
 ﻿@using FlixNest.Models;
-@using FlixNest.Repository.MovieGenreRepository
-@using FlixNest.Repository.YearRepository
-@using FlixNest.Repository.CountryRepository
-@inject IMovieGenreRepository _movieRepository;
+ @using FlixNest.IAppServices;
+@inject IMovieGenreService _movieService;
 
-@inject IYearRepository _yearRepository;
-@inject ICountryRepository _countryRepository;
+@inject IYearService _yearService;
+@inject ICountryService _countryService;
 <div class="app-title">
     <div>
         <h1><i class="fa fa-th-list"></i> Data Table</h1>
@@ -45,9 +43,9 @@
                                 <td>@number</td>
                                 <td><a asp-action="Detail" asp-controller="Movie" asp-route-id="@item.MovieId">@item.MovieName</a></td>
                                 <td>@item.MovieTitle</td>
-                                <td>@(_yearRepository.findbyId(item.YearId)?.YearName)</td>
+                                <td>@(_yearService.findbyId(item.YearId)?.YearName)</td>
                                 <td>@item.MovieTime</td>
-                                <td>@(_countryRepository.findbyId(item.CountryId)?.CountryName)</td>
+                                <td>@(_countryService.findbyId(item.CountryId)?.CountryName)</td>
 
                                 <td><img src="~/images/@item.Image" style="width : 10%"></td>
                                 <td>

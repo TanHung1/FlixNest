@@ -1,5 +1,5 @@
-﻿using FlixNest.Models;
-using FlixNest.Repository.DirectorRepository;
+﻿using FlixNest.IAppServices;
+using FlixNest.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FlixNest.Areas.Admin.Controllers
@@ -7,16 +7,16 @@ namespace FlixNest.Areas.Admin.Controllers
     [Area("admin")]
     public class DirectorController : Controller
     {
-        private IDirectorRepository _directorRepository;
-        public DirectorController(IDirectorRepository directorRepository)
+        private IDirectorService _directorService;
+        public DirectorController(IDirectorService directorService)
         {
-            _directorRepository = directorRepository;
+            _directorService = directorService;
         }
 
         [HttpPost]
         public IActionResult saveDir(Director director)
         {
-            _directorRepository.CreateDirector(director);
+            _directorService.CreateDirector(director);
             return RedirectToAction("Index", "Table");
         }
         public IActionResult CreateDir()
@@ -27,18 +27,18 @@ namespace FlixNest.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult updateDir(Director director)
         {
-            _directorRepository.UpdateDirector(director);
+            _directorService.UpdateDirector(director);
             return RedirectToAction("Index", "Table");
         }
 
         public IActionResult EditDir(int id)
         {
-            return View("EditDir", _directorRepository.findbyId(id));
+            return View("EditDir", _directorService.findbyId(id));
         }
 
         public IActionResult DeleteDirector(int id)
         {
-            _directorRepository.DeleteDirector(id);
+            _directorService.DeleteDirector(id);
             return RedirectToAction("Index", "Table");
         }
     }

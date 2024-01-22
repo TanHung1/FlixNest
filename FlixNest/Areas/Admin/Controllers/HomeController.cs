@@ -1,7 +1,6 @@
 ﻿using FlixNest.Areas.Identity.Data;
+using FlixNest.IAppServices;
 using FlixNest.Models;
-using FlixNest.Repository.AccountRepository;
-using FlixNest.Repository.MovieRepository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -13,24 +12,24 @@ namespace FlixNest.Areas.Admin.Controllers
     public class HomeController : Controller
     {
         private readonly SignInManager<AccountUser> _signInManager;
-        private IAccountRepository _accountRepository;
-        private IMovieRepository _movieRepository;
-        public HomeController(SignInManager<AccountUser> signInManager, IAccountRepository accountRepository,
-                              IMovieRepository movieRepository)
+        private IAccountService _accountService;
+        private IMovieService _movieService;
+        public HomeController(SignInManager<AccountUser> signInManager, IAccountService accountService,
+                              IMovieService movieService)
         {
             _signInManager = signInManager;
-            _accountRepository = accountRepository;
-            _movieRepository = movieRepository;
+            _accountService = accountService;
+            _movieService = movieService;
         }
         public IActionResult Index()
         {
-            int AccountCount = _accountRepository.CountAccount();
+            int AccountCount = _accountService.CountAccount();
             ViewBag.CountAccount = AccountCount;
-            int MovieCount = _movieRepository.MovieCount();
+            int MovieCount = _movieService.MovieCount();
             ViewBag.MovieCount = MovieCount;
-            List<Movie> movies = _movieRepository.GetMoviebyFollower().Take(1).ToList();
+            List<Movie> movies = _movieService.GetMoviebyFollower().Take(1).ToList();
             ViewBag.MovieFollow = movies;
-            List<Movie> MovieWithMostComment = _movieRepository.GetMovieWithMostComment().Take(1).ToList();
+            List<Movie> MovieWithMostComment = _movieService.GetMovieWithMostComment().Take(1).ToList();
             ViewBag.MovieMostComment = MovieWithMostComment;
             return View();
         }

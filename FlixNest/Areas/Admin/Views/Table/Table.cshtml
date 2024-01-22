@@ -1,7 +1,6 @@
-﻿@using FlixNest.Models;
-@using FlixNest.Repository.MovieGenreRepository
-
-@inject IMovieGenreRepository _movieRepository;
+﻿
+ @using FlixNest.IAppServices;
+@inject IMovieGenreService _movieService;
 
 <div class="app-title">
     <div>
