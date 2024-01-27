@@ -22,7 +22,7 @@ namespace FlixNest.Models
         public int FollowerCount { get; set; }
 
         public bool IsDeleted { get; set; }
-        public bool IsCreated { get; set; }
+        public bool IsApproved { get; set; }
         public List<MovieGenre> movieGenres { get; set; }
 
         public List<MovieDirector> movieDirectors { get; set; }

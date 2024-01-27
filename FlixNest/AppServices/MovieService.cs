@@ -48,7 +48,7 @@ namespace FlixNest.AppServices
         {
             _context.Movie.Add(movie);
             movie.Status = ConstantsFlixNest.Movie.WaittingForCreate;
-            movie.IsCreated = true;
+            movie.IsApproved = true;
             _context.SaveChanges();
 
             _context.episodes.Add(episode);
@@ -69,8 +69,8 @@ namespace FlixNest.AppServices
             Movie mov = _context.Movie.FirstOrDefault(x => x.MovieId == movie.MovieId);
             if (mov != null)
             {
-
-                mov.IsCreated = false;
+                mov.Status = ConstantsFlixNest.Movie.Approve;
+                mov.IsApproved = false;
 
                 _context.SaveChanges();
 
@@ -84,8 +84,9 @@ namespace FlixNest.AppServices
             Movie mov = _context.Movie.FirstOrDefault(x => x.MovieId == movie.MovieId);
             if (mov != null)
             {
+                mov.Status = ConstantsFlixNest.Movie.Reject;
 
-                mov.IsCreated = true;
+                mov.IsApproved = true;
 
                 _context.SaveChanges();
 
@@ -109,7 +110,7 @@ namespace FlixNest.AppServices
                 movie.IsDeleted = true;
                 AddMovieLog(movie, "Đã xóa phim");
                 _context.SaveChanges(true);
-                BackgroundJob.Schedule(() => DeleteCompleteMovie(movie.MovieId), TimeSpan.FromHours(30));
+                BackgroundJob.Schedule(() => DeleteCompleteMovie(movie.MovieId), TimeSpan.FromHours(72));
             }
         }
 
@@ -180,33 +181,33 @@ namespace FlixNest.AppServices
 
         public List<Genre> GetGenresByMovieId(int movieId)
         {
-            return _context.MovieGenre.Where(x => x.MovieId == movieId).Select(x => x.Genre).ToList();
+            return _context.MovieGenre.Where(x => x.MovieId == movieId && !x.Movie.IsApproved).Select(x => x.Genre).ToList();
         }
 
         public List<Movie> GetMoviebyYear(int id)
         {
-            return _context.Movie.Where(x => x.YearId == id).ToList();
+            return _context.Movie.Where(x => x.YearId  == id && !x.IsApproved).ToList();
         }
 
         public List<Movie> GetMovieByGenreName(int gerneId)
         {
-            return _context.Movie.Include(x => x.movieGenres).ThenInclude(x => x.Genre)
-                                 .Where(x => x.movieGenres.Any(x => x.Genre.GenreId == gerneId)).ToList();
+            return _context.Movie.Include(x => x.movieGenres ).ThenInclude(x => x.Genre)
+                                 .Where(x =>!x.IsApproved &&  x.movieGenres.Any(x => x.Genre.GenreId == gerneId)).ToList();
         }
 
         public List<Movie> findMoviebyName(string name)
         {
-            return _context.Movie.Where(x => x.MovieName.Contains(name)).ToList();
+            return _context.Movie.Where(x => x.MovieName.Contains(name) && !x.IsApproved).ToList();
         }
 
         public List<Movie> GetMoviebyCountry(int id)
         {
-            return _context.Movie.Where(x => x.CountryId == id).ToList();
+            return _context.Movie.Where(x => x.CountryId == id && !x.IsApproved).ToList();
         }
 
         public List<Movie> GetMoviebyFollower()
         {
-            return _context.Movie.Where(x => !x.IsDeleted && !x.IsCreated).OrderByDescending(x => x.FollowerCount).ToList();
+            return _context.Movie.Where(x => !x.IsDeleted && !x.IsApproved).OrderByDescending(x => x.FollowerCount).ToList();
         }
 
         public bool CheckNameMovie(string name)

@@ -1,6 +1,7 @@
 ﻿using FlixNest.Areas.Identity.Data;
 using FlixNest.IAppServices;
 using FlixNest.Models;
+using JetBrains.Annotations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -38,10 +39,13 @@ namespace FlixNest.Controllers
             _signInManager.SignOutAsync();
             return LocalRedirect("/");
         }
-        public IActionResult GetallMoviebyFollower()
+        public IActionResult GetallMoviebyFollower(int? Page)
         {
-            List<Movie> movies = _movieService.GetMoviebyFollower();
-            return View(movies);
+            int pageNumber = Page ?? 1;
+            int pageSize = 6;
+            List<Movie> movieFollows = _movieService.GetMoviebyFollower();
+            ViewBag.MovieFollow = movieFollows.ToPagedList(pageNumber, pageSize);
+            return View();
         }
         public IActionResult GetallNewMovie(int? Page)
         {
@@ -152,25 +156,43 @@ namespace FlixNest.Controllers
             return View(selectedEpisode);
 
         }
-        public IActionResult findMovieByYear(int id)
+        public IActionResult findMovieByYear(int id, int? Page)
         {
+            int pageNumber = Page ?? 1;
+            int pageSize = 6;
             List<Movie> movies = _movieService.GetMoviebyYear(id);
-            return View(movies);
+            ViewBag.MovieYear = movies.ToPagedList(pageNumber, pageSize);
+            ViewBag.Id = id;
+            return View();
         }
-        public IActionResult findMovieByGenre(int genreId)
+        public IActionResult findMovieByGenre(int genreId, int? Page)
         {
+            int pageNumber = Page ?? 1;
+            int pageSize = 6;
             List<Movie> movies = _movieService.GetMovieByGenreName(genreId);
-            return View(movies);
+            ViewBag.MovieGenre = movies.ToPagedList( pageNumber, pageSize);
+            ViewBag.Id = genreId;
+
+            return View();
         }
-        public IActionResult findbyMovieName(string name)
+        public IActionResult findbyMovieName(string name, int? Page)
         {
+            int pageNumber = Page ?? 1;
+            int pageSize = 6;
             List<Movie> movies = _movieService.findMoviebyName(name);
-            return View(movies);
+            ViewBag.MovieName = movies.ToPagedList(pageNumber, pageSize);
+            ViewBag.Name = name;
+            
+            return View();
         }
-        public IActionResult findMovieByCountry(int id)
+        public IActionResult findMovieByCountry(int id, int? Page)
         {
+            int pageNumber = Page ?? 1;
+            int pageSize = 6;
             List<Movie> movies = _movieService.GetMoviebyCountry(id);
-            return View(movies);
+            ViewBag.MovieCountry = movies.ToPagedList(pageNumber, pageSize);
+            ViewBag.Id = id;
+            return View();
         }
     }
 }

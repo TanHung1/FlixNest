@@ -1,5 +1,5 @@
 ﻿@using FlixNest.Models;
-
+@using X.PagedList.Mvc.Core;
 <!-- Product Section Begin -->
 <section class="product spad">
     <div class="container">
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        @foreach (var item in Model)
+                        @foreach (var item in ViewBag.MovieFollow)
                         {
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
@@ -41,6 +41,11 @@
 
 
                     </div>
+                    <div style="color: white; text-align: center; margin-top: 20px;">
+                       
+                        @Html.PagedListPager((X.PagedList.IPagedList)ViewBag.MovieFollow, page => Url.Action("GetallMoviebyFollower", new { page }))
+                    </div>
+
                 </div>
 
             </div>

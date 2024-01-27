@@ -35,7 +35,13 @@ namespace FlixNest.AppServices
 
 
         }
+        public void DeleteCompleteEpisode(int id)
+        {
+            Episode episode = _context.episodes.FirstOrDefault(x => x.EpisodeId == id);
+            _context.episodes.Remove(episode);
+            _context.SaveChanges();
 
+        }
         public void DeleteEpisode(int id)
         {
             Episode episode = _context.episodes.FirstOrDefault(x => x.EpisodeId == id);
@@ -45,6 +51,7 @@ namespace FlixNest.AppServices
                 Eplog(episode, "Đã được xóa tạm thời");
 
                 _context.SaveChanges();
+                BackgroundJob.Schedule(() => DeleteCompleteEpisode(episode.EpisodeId), TimeSpan.FromHours(72));
             }
         }
 
@@ -105,13 +112,7 @@ namespace FlixNest.AppServices
 
         }
 
-        public void DeleteCompleteEpisode(int id)
-        {
-            Episode episode = _context.episodes.FirstOrDefault(x => x.EpisodeId == id);
-            _context.episodes.Remove(episode);
-            _context.SaveChanges();
-
-        }
+      
 
 
     }

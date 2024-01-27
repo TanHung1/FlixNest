@@ -15,5 +15,6 @@
     <WebStackScaffolding_DbContextTypeFullName>FlixNest.Models.FlixNestDbContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_DbContextDialogWidth>650.4</WebStackScaffolding_DbContextDialogWidth>
     <WebStackScaffolding_LayoutPageFile />
+    <NameOfLastUsedPublishProfile>D:\ProjectXemPhim\FlixNest\FlixNest\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

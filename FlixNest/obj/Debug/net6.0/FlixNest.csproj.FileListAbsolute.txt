@@ -543,3 +543,4 @@ D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\refint\FlixNest.dll
 D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.pdb
 D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\FlixNest.genruntimeconfig.cache
 D:\ProjectXemPhim\FlixNest\FlixNest\obj\Debug\net6.0\ref\FlixNest.dll
+D:\ProjectXemPhim\FlixNest\FlixNest\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll

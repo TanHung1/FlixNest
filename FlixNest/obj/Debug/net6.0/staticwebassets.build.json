@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IAamRpWvVG9zM81a4GDYdUiiMpvQcLZvWp2uujOW/3Y=",
+  "Hash": "ssuqyzitGYer1uJ9jOj7O8K7RKi8pUe3q+q8+624eMA=",
   "Source": "FlixNest",
   "BasePath": "_content/FlixNest",
   "Mode": "Default",
@@ -5392,6 +5392,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ok\\script.js"
+    },
+    {
+      "Identity": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\paging\\paging.css",
+      "SourceId": "FlixNest",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\",
+      "BasePath": "_content/FlixNest",
+      "RelativePath": "paging/paging.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\paging\\paging.css"
     },
     {
       "Identity": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\239f97b4-4792-4e3e-8b7c-bc3838580b65_Intership_Back_End_2023_TruongTanHung_28-09-2023_Report.mp4",

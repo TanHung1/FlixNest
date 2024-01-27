@@ -279,7 +279,7 @@ namespace FlixNest.Areas.Admin.Controllers
         public IActionResult DeleteComple(int id)
         {
             _movieService.DeleteCompleteMovie(id);
-            return RedirectToAction("Index", "Table");
+            return RedirectToAction("MovieWaitingDelete");
         }
 
         public IActionResult ReStoreMovie(int id)

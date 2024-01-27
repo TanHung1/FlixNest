@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g/pwEU9RsxQVLlZuhDRsMFnRXmQkWRf+dfSSgsZ4M3os7yEv1n5i7R7npccGHqVWR9xoWgwDcN+R5KsaQ90w3A==",
+  "dgSpecHash": "FIKzul31M2Kw1PC+9+xiScGQHunIhvJVtyuvRdqFqGPNK4KVynTpMvMAuz60qywcOkzQgwmkR3SkK0ryF4APMA==",
   "success": true,
   "projectFilePath": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\FlixNest.csproj",
   "expectedPackageFiles": [
@@ -63,6 +63,7 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\6.0.26\\microsoft.aspnetcore.authentication.google.6.0.26.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.25\\microsoft.aspnetcore.authentication.jwtbearer.6.0.25.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.23\\microsoft.aspnetcore.cryptography.internal.6.0.23.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.23\\microsoft.aspnetcore.cryptography.keyderivation.6.0.23.nupkg.sha512",
@@ -243,5 +244,16 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\x.pagedlist\\8.4.7\\x.pagedlist.8.4.7.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\x.pagedlist.mvc.core\\8.4.7\\x.pagedlist.mvc.core.8.4.7.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.SqlClient' 4.8.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

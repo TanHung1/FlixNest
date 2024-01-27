@@ -4,6 +4,7 @@
 
 @inject IYearService _yearService;
 @inject ICountryService _countryService;
+
 <div class="app-title">
     <div>
         <h1><i class="fa fa-th-list"></i> Data Table</h1>
@@ -22,6 +23,7 @@
                 <table class="table table-hover table-bordered" id="table1">
                     <thead>
                         <tr>
+                            <th>STT</th>
                             <th>Tên Phim</th>
                             <th>Năm ra phim</th>
                             <th>Thời lượng</th>
@@ -33,9 +35,13 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            var number = 1;
+                        }
                         @foreach (var item in Model.Movie)
                         {
                             <tr>
+                                <td>@number</td>
                                 <td><a asp-action="Detail" asp-controller="Movie" asp-route-id="@item.MovieId">@item.MovieName</a></td>
                                 <td>@(_yearService.findbyId(item.YearId)?.YearName)</td>
                                 <td>@item.MovieTime</td>
@@ -53,19 +59,27 @@
                                             <a class="dropdown-item" asp-controller="Movie" asp-action="LogMovie" asp-route-id="@item.MovieId"><i class="dw dw-eye"></i>Nhật ký hoạt động</a>
                                             @if (User.IsInRole("Administrator"))
                                             {
-                                                <a class="dropdown-item" asp-controller="Movie" asp-action="ApproveMovie" asp-route-id="@item.MovieId"
-                                                   onclick="return confirm('Bạn có muốn phê duyệt bộ phim này')"><i class="dw dw-delete-3"></i> Chấp nhận</a>
-                                                <a class="dropdown-item" asp-controller="Movie" asp-action="RejectMovie" asp-route-id="@item.MovieId"
-                                                   onclick="return confirm('Bạn có muốn từ chối phế duyệt bộ phim này')"><i class="dw dw-delete-3"></i> Từ chối</a>
-                                                <a class="dropdown-item" asp-controller="Movie" asp-action="UpdateMovie" asp-route-id="@item.MovieId"><i class="dw dw-edit2"></i> Chỉnh sửa</a>
-                                                <a class="dropdown-item" asp-controller="Movie" asp-action="DeleteMoivie" asp-route-id="@item.MovieId"
-                                                   onclick="return confirm('Bạn có muốn xóa bộ phim này')"><i class="dw dw-delete-3"></i> Xóa tạm thời</a>
+                                                
+                                                @if(item.IsApproved){
+                                                    <a class="dropdown-item" asp-controller="Movie" asp-action="ApproveMovie" asp-route-id="@item.MovieId"
+                                                       onclick="return confirm('Bạn có muốn phê duyệt bộ phim này')"><i class="dw dw-delete-3"></i> Chấp nhận</a>
+                                                    <a class="dropdown-item" asp-controller="Movie" asp-action="RejectMovie" asp-route-id="@item.MovieId"
+                                                       onclick="return confirm('Bạn có muốn từ chối phế duyệt bộ phim này')"><i class="dw dw-delete-3"></i> Từ chối</a>
+                                                   
+                                                }
+                                                @if (!item.IsApproved)
+                                                {
+                                                    <a class="dropdown-item" asp-controller="Movie" asp-action="UpdateMovie" asp-route-id="@item.MovieId"><i class="dw dw-edit2"></i> Chỉnh sửa</a>
+                                                    <a class="dropdown-item" asp-controller="Movie" asp-action="DeleteMoivie" asp-route-id="@item.MovieId"
+                                                       onclick="return confirm('Bạn có muốn xóa bộ phim này')"><i class="dw dw-delete-3"></i> Xóa tạm thời</a>
+                                                }
                                             }
                                            
                                         </div>
                                     </div>
                                 </td>
                             </tr>
+                            number++;
                         }
 
 
@@ -89,14 +103,19 @@
                 <table class="table table-hover table-bordered" id="table2">
                     <thead>
                         <tr>
+                            <th>STT</th>
                             <th>Tên Thể loại</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            var number1 = 1;
+                        }
                         @foreach (var item in Model.Genre)
                         {
                             <tr>
+                                <td>@number1</td>
                                 <td>@item.GenreName</td>
                                 <td>
                                     <div class="dropdown">
@@ -111,6 +130,7 @@
                                     </div>
                                 </td>
                             </tr>
+                            number1++;
                         }
                     </tbody>
                 </table>
@@ -125,14 +145,19 @@
                 <table class="table table-hover table-bordered" id="table3">
                     <thead>
                         <tr>
+                            <th>STT</th>
                             <th>Họ và tên diễn viên</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            var number2 = 1;
+                        }
                         @foreach (var item in Model.Actor)
                         {
                             <tr>
+                                <td>@number2</td>
                                 <td>@item.Fname @item.Lname</td>
                                 <td>
                                     <div class="dropdown">
@@ -147,6 +172,7 @@
                                     </div>
                                 </td>
                             </tr>
+                            number2++;
                         }
                     </tbody>
                 </table>
@@ -161,14 +187,19 @@
                 <table class="table table-hover table-bordered" id="table4">
                     <thead>
                         <tr>
+                            <th>STT</th>
                             <th>Họ và tên Đạo diễn</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            var number3 = 1;
+                        }
                         @foreach (var item in Model.Director)
                         {
                             <tr>
+                                <td>@number3</td>
                                 <td>@item.Fname @item.LName</td>
                                 <td>
                                     <div class="dropdown">
@@ -183,6 +214,7 @@
                                     </div>
                                 </td>
                             </tr>
+                            number3++;
                         }
                     </tbody>
                 </table>

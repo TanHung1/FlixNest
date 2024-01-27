@@ -1,0 +1,969 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\FlixNest.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FlixNest.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\blank-page.html",
+      "PackagePath": "staticwebassets\\docs\\blank-page.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\bootstrap-components.html",
+      "PackagePath": "staticwebassets\\docs\\bootstrap-components.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\charts.html",
+      "PackagePath": "staticwebassets\\docs\\charts.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\css\\main.css",
+      "PackagePath": "staticwebassets\\docs\\css\\main.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\form-components.html",
+      "PackagePath": "staticwebassets\\docs\\form-components.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\form-custom.html",
+      "PackagePath": "staticwebassets\\docs\\form-custom.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\form-notifications.html",
+      "PackagePath": "staticwebassets\\docs\\form-notifications.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\form-samples.html",
+      "PackagePath": "staticwebassets\\docs\\form-samples.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\index.html",
+      "PackagePath": "staticwebassets\\docs\\index.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\main.js",
+      "PackagePath": "staticwebassets\\docs\\js\\main.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\bootstrap-notify.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\bootstrap-notify.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\chart.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\chart.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\dataTables.bootstrap.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\dataTables.bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\fullcalendar.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\jquery-ui.custom.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\jquery-ui.custom.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\jquery.vmap.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\jquery.vmap.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\jquery.vmap.sampledata.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\jquery.vmap.sampledata.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\jquery.vmap.world.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\jquery.vmap.world.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\moment.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\moment.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\pace.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\pace.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\select2.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\select2.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\plugins\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\plugins\\sweetalert.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\docs\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\page-calendar.html",
+      "PackagePath": "staticwebassets\\docs\\page-calendar.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\page-error.html",
+      "PackagePath": "staticwebassets\\docs\\page-error.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\page-invoice.html",
+      "PackagePath": "staticwebassets\\docs\\page-invoice.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\page-lockscreen.html",
+      "PackagePath": "staticwebassets\\docs\\page-lockscreen.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\page-login.html",
+      "PackagePath": "staticwebassets\\docs\\page-login.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\page-mailbox.html",
+      "PackagePath": "staticwebassets\\docs\\page-mailbox.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\page-user.html",
+      "PackagePath": "staticwebassets\\docs\\page-user.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\table-basic.html",
+      "PackagePath": "staticwebassets\\docs\\table-basic.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\table-data-table.html",
+      "PackagePath": "staticwebassets\\docs\\table-data-table.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\ui-cards.html",
+      "PackagePath": "staticwebassets\\docs\\ui-cards.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\docs\\widgets.html",
+      "PackagePath": "staticwebassets\\docs\\widgets.html"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\16114339_1886177641618333_7666882392858101640_n.jpg",
+      "PackagePath": "staticwebassets\\images\\16114339_1886177641618333_7666882392858101640_n.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\350953592_282755544174331_8842654021285196256_n.jpg",
+      "PackagePath": "staticwebassets\\images\\350953592_282755544174331_8842654021285196256_n.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\409448439_1754418581742720_5822714024886132783_n.jpg",
+      "PackagePath": "staticwebassets\\images\\409448439_1754418581742720_5822714024886132783_n.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\83871483_187149415678916_6393048194346909696_n.jpg",
+      "PackagePath": "staticwebassets\\images\\83871483_187149415678916_6393048194346909696_n.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\MV5BNTY1ZDQzNzQtZGM1Yy00YjRhLTliYmMtOGM2OWFlYTRjOTc2XkEyXkFqcGdeQXVyMTY3MDE5MDY1._V1_FMjpg_UX1000_.jpg",
+      "PackagePath": "staticwebassets\\images\\MV5BNTY1ZDQzNzQtZGM1Yy00YjRhLTliYmMtOGM2OWFlYTRjOTc2XkEyXkFqcGdeQXVyMTY3MDE5MDY1._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\MV5BOGFjYWNkMTMtMTg1ZC00Y2I4LTg0ZTYtN2ZlMzI4MGQwNzg4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+      "PackagePath": "staticwebassets\\images\\MV5BOGFjYWNkMTMtMTg1ZC00Y2I4LTg0ZTYtN2ZlMzI4MGQwNzg4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\about-img.png",
+      "PackagePath": "staticwebassets\\images\\about-img.png"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\grand-theft-auto-v-cover.jpg",
+      "PackagePath": "staticwebassets\\images\\grand-theft-auto-v-cover.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\hp1.jpg",
+      "PackagePath": "staticwebassets\\images\\hp1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\qiongru-182514102550-Vang-Vieng.jpg",
+      "PackagePath": "staticwebassets\\images\\qiongru-182514102550-Vang-Vieng.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\recent-1.jpg",
+      "PackagePath": "staticwebassets\\images\\recent-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\recent-2.jpg",
+      "PackagePath": "staticwebassets\\images\\recent-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\recent-3.jpg",
+      "PackagePath": "staticwebassets\\images\\recent-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\recent-4.jpg",
+      "PackagePath": "staticwebassets\\images\\recent-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\recent-5.jpg",
+      "PackagePath": "staticwebassets\\images\\recent-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\recent-6.jpg",
+      "PackagePath": "staticwebassets\\images\\recent-6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\images\\rwrwrw.jpg",
+      "PackagePath": "staticwebassets\\images\\rwrwrw.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\js\\multiple.js",
+      "PackagePath": "staticwebassets\\js\\multiple.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\main\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\css\\elegant-icons.css",
+      "PackagePath": "staticwebassets\\main\\css\\elegant-icons.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\main\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\main\\css\\nice-select.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\main\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\css\\plyr.css",
+      "PackagePath": "staticwebassets\\main\\css\\plyr.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\main\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\css\\style.css",
+      "PackagePath": "staticwebassets\\main\\css\\style.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\ElegantIcons.eot",
+      "PackagePath": "staticwebassets\\main\\fonts\\ElegantIcons.eot"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\ElegantIcons.svg",
+      "PackagePath": "staticwebassets\\main\\fonts\\ElegantIcons.svg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\ElegantIcons.ttf",
+      "PackagePath": "staticwebassets\\main\\fonts\\ElegantIcons.ttf"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\main\\fonts\\ElegantIcons.woff"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\main\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\main\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\main\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\main\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\main\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\main\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\anime\\details-pic.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\anime\\details-pic.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\anime\\review-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\anime\\review-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\anime\\review-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\anime\\review-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\anime\\review-3.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\anime\\review-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\anime\\review-4.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\anime\\review-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\anime\\review-5.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\anime\\review-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\anime\\review-6.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\anime\\review-6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-10.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-10.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-11.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-11.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-12.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-12.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-7.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-7.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-8.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-8.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\blog-9.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\blog-9.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\details\\bd-item-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\details\\bd-item-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\details\\bd-item-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\details\\bd-item-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\details\\bd-item-3.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\details\\bd-item-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\details\\blog-details-pic.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\details\\blog-details-pic.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\details\\comment-1.png",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\details\\comment-1.png"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\details\\comment-2.png",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\details\\comment-2.png"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\blog\\details\\comment-3.png",
+      "PackagePath": "staticwebassets\\main\\img\\blog\\details\\comment-3.png"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\hero\\hero-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\hero\\hero-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\hero\\hero-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\hero\\hero-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\live\\live-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\live\\live-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\live\\live-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\live\\live-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\live\\live-3.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\live\\live-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\live\\live-4.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\live\\live-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\live\\live-5.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\live\\live-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\live\\live-6.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\live\\live-6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\logo.png",
+      "PackagePath": "staticwebassets\\main\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\normal-breadcrumb.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\normal-breadcrumb.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\popular\\popular-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\popular\\popular-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\popular\\popular-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\popular\\popular-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\popular\\popular-3.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\popular\\popular-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\popular\\popular-4.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\popular\\popular-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\popular\\popular-5.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\popular\\popular-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\popular\\popular-6.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\popular\\popular-6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\recent\\recent-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\recent\\recent-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\recent\\recent-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\recent\\recent-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\recent\\recent-3.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\recent\\recent-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\recent\\recent-4.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\recent\\recent-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\recent\\recent-5.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\recent\\recent-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\recent\\recent-6.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\recent\\recent-6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\sidebar\\comment-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\sidebar\\comment-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\sidebar\\comment-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\sidebar\\comment-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\sidebar\\comment-3.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\sidebar\\comment-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\sidebar\\comment-4.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\sidebar\\comment-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\sidebar\\tv-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\sidebar\\tv-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\sidebar\\tv-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\sidebar\\tv-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\sidebar\\tv-3.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\sidebar\\tv-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\sidebar\\tv-4.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\sidebar\\tv-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\sidebar\\tv-5.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\sidebar\\tv-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\trending\\trend-1.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\trending\\trend-1.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\trending\\trend-2.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\trending\\trend-2.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\trending\\trend-3.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\trending\\trend-3.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\trending\\trend-4.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\trending\\trend-4.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\trending\\trend-5.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\trending\\trend-5.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\img\\trending\\trend-6.jpg",
+      "PackagePath": "staticwebassets\\main\\img\\trending\\trend-6.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\main\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\main\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\main\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\main\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\js\\main.js",
+      "PackagePath": "staticwebassets\\main\\js\\main.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\js\\mixitup.min.js",
+      "PackagePath": "staticwebassets\\main\\js\\mixitup.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\main\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\js\\player.js",
+      "PackagePath": "staticwebassets\\main\\js\\player.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\videos\\1.mp4",
+      "PackagePath": "staticwebassets\\main\\videos\\1.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\main\\videos\\anime-watch.jpg",
+      "PackagePath": "staticwebassets\\main\\videos\\anime-watch.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\_media.css",
+      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\_media.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\mixins\\_border-radius.css",
+      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\mixins\\_border-radius.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\mixins\\_clearfix.css",
+      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\mixins\\_clearfix.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\mixins\\_screen-reader.css",
+      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\mixins\\_screen-reader.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\mixins\\_size.css",
+      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\mixins\\_size.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\mixins\\_visibility.css",
+      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\mixins\\_visibility.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\bootstrap\\utilities\\_stretched-link.css",
+      "PackagePath": "staticwebassets\\multiple\\css\\bootstrap\\utilities\\_stretched-link.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\css\\style.css",
+      "PackagePath": "staticwebassets\\multiple\\css\\style.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\multiple\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\multiple\\js\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\js\\main.js",
+      "PackagePath": "staticwebassets\\multiple\\js\\main.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\multiple\\js\\popper.js",
+      "PackagePath": "staticwebassets\\multiple\\js\\popper.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\ok\\script.js",
+      "PackagePath": "staticwebassets\\ok\\script.js"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\paging\\paging.css",
+      "PackagePath": "staticwebassets\\paging\\paging.css"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\239f97b4-4792-4e3e-8b7c-bc3838580b65_Intership_Back_End_2023_TruongTanHung_28-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\239f97b4-4792-4e3e-8b7c-bc3838580b65_Intership_Back_End_2023_TruongTanHung_28-09-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\4e5618ba-61f1-4d66-9f34-48da8e53ac4c_6ceecf20-3a28-401e-9556-d9fc47e025e1_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\4e5618ba-61f1-4d66-9f34-48da8e53ac4c_6ceecf20-3a28-401e-9556-d9fc47e025e1_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\4ed8399d-34e1-4398-a867-d149135ee60f_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\4ed8399d-34e1-4398-a867-d149135ee60f_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\6ceecf20-3a28-401e-9556-d9fc47e025e1_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\6ceecf20-3a28-401e-9556-d9fc47e025e1_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\Godzilla x Kong _ Đế Chế Mới _ Official Trailer.mp4",
+      "PackagePath": "staticwebassets\\videos\\Godzilla x Kong _ Đế Chế Mới _ Official Trailer.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\HARRY POTTER VÀ HÒN ĐÁ PHÙ THỦY - TRAILER.mp4",
+      "PackagePath": "staticwebassets\\videos\\HARRY POTTER VÀ HÒN ĐÁ PHÙ THỦY - TRAILER.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\Intership_Back_End_2023_TruongTanHung_02-10-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\Intership_Back_End_2023_TruongTanHung_02-10-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\Intership_Back_End_2023_TruongTanHung_21-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\Intership_Back_End_2023_TruongTanHung_21-09-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\Intership_Back_End_2023_TruongTanHung_25-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\Intership_Back_End_2023_TruongTanHung_25-09-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\Intership_Back_End_2023_TruongTanHung_28-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\Intership_Back_End_2023_TruongTanHung_28-09-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\a0b692c6-10fb-4444-abc2-d3cbc4ab63f7_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\a0b692c6-10fb-4444-abc2-d3cbc4ab63f7_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\black.jpg",
+      "PackagePath": "staticwebassets\\videos\\black.jpg"
+    },
+    {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\c2cdcf52-b2a5-48be-87f3-b03cf9d60ba0_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4",
+      "PackagePath": "staticwebassets\\videos\\c2cdcf52-b2a5-48be-87f3-b03cf9d60ba0_Intership_Back_End_2023_TruongTanHung_18-09-2023_Report.mp4"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.FlixNest.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.FlixNest.props",
+      "PackagePath": "build\\FlixNest.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.FlixNest.props",
+      "PackagePath": "buildMultiTargeting\\FlixNest.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.FlixNest.props",
+      "PackagePath": "buildTransitive\\FlixNest.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

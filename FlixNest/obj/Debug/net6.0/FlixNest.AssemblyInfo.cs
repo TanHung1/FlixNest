@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlixNest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d9dce5c84d9a66f76c4f2bfe722553f0ade2491")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f9f10a4f8e2b33b04640973202e822bb17dcca1")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlixNest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlixNest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

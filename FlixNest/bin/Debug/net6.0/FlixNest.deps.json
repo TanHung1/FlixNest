@@ -11,6 +11,7 @@
           "Hangfire": "1.8.7",
           "Hangfire.AspNetCore": "1.8.7",
           "Hangfire.SqlServer": "1.8.7",
+          "Microsoft.AspNetCore.Authentication.Google": "6.0.26",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.25",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
           "Microsoft.AspNetCore.Identity.UI": "6.0.23",
@@ -697,6 +698,14 @@
         }
       },
       "MessagePackAnalyzer/2.1.152": {},
+      "Microsoft.AspNetCore.Authentication.Google/6.0.26": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "6.0.26.0",
+            "fileVersion": "6.0.2623.60506"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.25": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.10.0"
@@ -3192,6 +3201,13 @@
       "sha512": "sha512-uJhZlGMkXDaFYsH8V9S6o1EyvsUqB9mpU4DVBXNr0DXZVzZMhuLP1IkLj5xK3EKlaAcvkFkZv3eSvuz360wb3Q==",
       "path": "messagepackanalyzer/2.1.152",
       "hashPath": "messagepackanalyzer.2.1.152.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Google/6.0.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jKHZ9qL7IcVtsxFRy7E4N+dAAgUTM6QhlGSCWS0GSNL0mU/JifQzDDMUOouY5NPnOH/idv+dJZRttDV/jEx6Dw==",
+      "path": "microsoft.aspnetcore.authentication.google/6.0.26",
+      "hashPath": "microsoft.aspnetcore.authentication.google.6.0.26.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.25": {
       "type": "package",

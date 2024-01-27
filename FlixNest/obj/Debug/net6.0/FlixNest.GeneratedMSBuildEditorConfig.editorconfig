@@ -222,6 +222,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx3YXRjaGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ProjectXemPhim/FlixNest/FlixNest/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ProjectXemPhim/FlixNest/FlixNest/Views/Profile/Following.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxGb2xsb3dpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

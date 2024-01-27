@@ -20,14 +20,19 @@
                 <table class="table table-hover table-bordered" id="table5">
                     <thead>
                         <tr>
+                            <th>Số thứ tự</th>
                             <th>Năm phát hành</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            var stt = 1;
+                        }
                         @foreach (var item in Model.Year)
                         {
                             <tr>
+                                <td>@stt</td>
                                 <td>@item.YearName</td>
                                 <td>
                                     <div class="dropdown">
@@ -42,6 +47,7 @@
                                     </div>
                                 </td>
                             </tr>
+                            stt++;
                         }
 
 
@@ -59,14 +65,19 @@
                 <table class="table table-hover table-bordered" id="table6">
                     <thead>
                         <tr>
+                            <th>Số thứ tự</th>
                             <th>Tên Quốc gia</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            var stt1 = 1;
+                        }
                         @foreach (var item in Model.Country)
                         {
                             <tr>
+                                <td>@stt1</td>
                                 <td>@item.CountryName</td>
                                 <td>
                                     <div class="dropdown">
@@ -81,6 +92,7 @@
                                     </div>
                                 </td>
                             </tr>
+                            stt1++;
                         }
                     </tbody>
                 </table>

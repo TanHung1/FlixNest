@@ -889,6 +889,10 @@
       "PackagePath": "staticwebassets\\ok\\script.js"
     },
     {
+      "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\paging\\paging.css",
+      "PackagePath": "staticwebassets\\paging\\paging.css"
+    },
+    {
       "Id": "D:\\ProjectXemPhim\\FlixNest\\FlixNest\\wwwroot\\videos\\239f97b4-4792-4e3e-8b7c-bc3838580b65_Intership_Back_End_2023_TruongTanHung_28-09-2023_Report.mp4",
       "PackagePath": "staticwebassets\\videos\\239f97b4-4792-4e3e-8b7c-bc3838580b65_Intership_Back_End_2023_TruongTanHung_28-09-2023_Report.mp4"
     },

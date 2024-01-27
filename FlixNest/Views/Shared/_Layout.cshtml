@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="~/main/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="~/main/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="~/main/css/style.css" type="text/css">
+    <link rel="stylesheet" href="~/paging/paging.css" type="text/css" />
 </head>
 <body>
     <header class="header">
@@ -89,7 +90,7 @@
                                 }
                                 else
                                 {
-                                    <a href="Identity/Account/Login"><span class="icon_profile" style="color: white"></span></a>
+                                    <a id="login" asp-area="Identity" asp-page="/Account/Login"><span class="icon_profile" style="color: white"></span></a>
                                 }
 
                             </ul>
